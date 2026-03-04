@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
-![CMake](https://img.shields.io/badge/CMake-3.10+-brightgreen.svg)
+![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
 Простая консольная программа на C++, которая выводит стилизованный ASCII-арт с текстом "Hello world". Проект создан в учебных целях.
 

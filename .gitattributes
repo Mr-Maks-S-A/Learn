@@ -1,0 +1,2 @@
+README_IMG/*.webm !text !filter !merge !diff
+README_IMG/*.mp4 !text !filter !merge !diff

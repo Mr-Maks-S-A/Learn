@@ -5,9 +5,9 @@
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
 Простая консольная программа на C++, которая выводит строку и число:
-Maksim
-42
-
+Maksim\n
+42\n
+\n
 Проект создан в учебных целях.
 
 ![](README_IMG/Helloworld.png)

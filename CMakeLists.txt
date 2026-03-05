@@ -12,10 +12,11 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 # Найти все исходные файлы (более явный способ)
-file(GLOB_RECURSE APP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c**" "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h**")
+# file(GLOB_RECURSE APP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c**" "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h**")
 
 # Создать исполняемый файл
-add_executable(${PROJECT_NAME} ${APP_SOURCES})
+# add_executable(${PROJECT_NAME} ${APP_SOURCES})
+add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
 
 # Указать директории для поиска заголовочных файлов
 # target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include" )

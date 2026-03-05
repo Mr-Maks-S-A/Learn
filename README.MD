@@ -4,10 +4,10 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-Простая консольная программа на C++, которая выводит строку и число:
-Maksim\n
-42\n
-\n
+Простая консольная программа на C++, которая выводит строку и число:<br>
+Maksim<br>
+42<br>
+<br>
 Проект создан в учебных целях.
 
 ![](README_IMG/Helloworld.png)

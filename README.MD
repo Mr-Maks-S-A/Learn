@@ -23,7 +23,7 @@ Console Out:<br>
 # 📊 Прогресс обучения
 
 2) **Переменные и их типы** 
-  - [x] Задание 1. Повторите число ([Ref]())
-  - [ ] Задание 2. Повторите слово ([Ref]())
+  - [x] Задание 1. Повторите число ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v2.1#))
+  - [x] Задание 2. Повторите слово ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v2.2#))
 1) **Установка окружения**
   - [x] Установка Компилятора ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v1.0#))

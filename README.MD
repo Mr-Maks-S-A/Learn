@@ -4,7 +4,7 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-ППрограмма "Повторите слово" <br>
+Программа "Повторите слово" <br>
 Программа запрашивает у пользователя слово и выводит его обратно на экран.<br>
 через стандартные потоки ввода (std::cin) и вывода (std::cout).<br>
 

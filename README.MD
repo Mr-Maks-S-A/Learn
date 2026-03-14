@@ -4,16 +4,12 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-Программа "Упорядочить числа" <br>
-Она запрашивает у пользователя три целых числа и выводит их на экран в порядке убывания.
+Программа "Гороскоп" <br>
+
 
 Console Out:<br>
 ```
-Введите первое число: 1
-Введите второе число: -2
-Введите третье число: 3
 
-Результат: 3 1 -2
 ```
 Проект создан в учебных целях.
 
@@ -24,7 +20,7 @@ Console Out:<br>
 3) **Операторы ветвления. Логические операции** 
   - [x] Задание 1. Таблица истинности ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.1#))
   - [x] Задание 2. Упорядочить числа ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.2#))
-  - [] Задание 3. Гороскоп ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.3#))
+  - [x] Задание 3. Гороскоп ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.3#))
   - [] Задание 4. Сравнить числа ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.4#))
 2) **Переменные и их типы** 
   - [x] Задание 1. Повторите число ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v2.1#))

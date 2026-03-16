@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc3_Compare_numbers VERSION 3.4.0)
+project(Worc4_Sum_of_digits_of_a_number VERSION 4.2.0)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

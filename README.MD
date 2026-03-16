@@ -4,22 +4,23 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-Программа "Сравнить числа" <br>
+Программа "Сумма цифр числа" <br>
 
 
 Console Out:<br>
 ```
 
 ```
+
 Проект создан в учебных целях.
 
-![](README_IMG/3.3_Операторы_ветвления_Логические_операции-Гороскоп.png)
+![](README_IMG/3.4_Операторы_ветвления_Логические_операции-Сравнение_чисел.png)
 
 ---
 # 📊 Прогресс обучения
 4) **Циклические конструкции** 
   - [x] Задание 1. Сумматор ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v4.1#))
-  - [] Задание 2. Сумма цифр числа ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v4.2#))
+  - [x] Задание 2. Сумма цифр числа ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v4.2#))
   - [] Задание 3. Таблица умножения для числа ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v4.3#))
 3) **Операторы ветвления. Логические операции** 
   - [x] Задание 1. Таблица истинности ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v3.1#))

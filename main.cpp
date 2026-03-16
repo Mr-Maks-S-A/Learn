@@ -1,5 +1,5 @@
 /**
- * @mainpage Программа "Compare_numbers"
+ * @mainpage Программа "Multiplication_table_for_the_number"
  * @section desc Описание
  *
  *

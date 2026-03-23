@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc5_Two-dimensional_array       VERSION 5.2.0)
+project(Worc5_Reverse_bubble       VERSION 5.4.0)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)

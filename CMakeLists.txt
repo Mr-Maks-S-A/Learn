@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc6_Eliminating_duplication       VERSION 6.2.0)
+project(Worc6_Fibonacci_numbers      VERSION 6.3.0)
 
 
 set(CMAKE_CXX_STANDARD 20)

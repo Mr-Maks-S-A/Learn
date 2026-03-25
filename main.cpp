@@ -1,12 +1,9 @@
 /**
- * @mainpage Программа "Арифметические функции"
+ * @mainpage Программа "Устранение дублирования"
  * @section desc Описание
- * Учебный проект для реализации базовых вычислений (сумма, разность, умножение, деление)
+ * Программа демонстрирует использование функций для устранения дублирования кода
+ * на примере возведения числа в целую положительную степень.
  *
- * @note **Оптимизация с constexpr и шаблонами**
- * Функции помечены ключевым словом `constexpr`, что позволяет производить
- * вычисления на этапе компиляции, если аргументы являются константами.
- * Использование шаблонов `<typename T>` обеспечивает универсальность типов.
  * @author Салакатов Максим Альбертович aka (Jarko || Mr-Maks-S-A)
  */
 
@@ -15,69 +12,26 @@
 #include <cstdlib>  // Для макроса EXIT_SUCCESS
 #include <clocale>  // Библиотека для работы с локалью (setlocale)
 
-
 /**
- * @brief Складывает два числа.
- * @tparam T Тип операндов (числовой тип).
- * @param a Первое слагаемое.
- * @param b Второе слагаемое.
- * @return Сумма a и b.
+ * @brief Функция для возведения числа в степень и вывода результата.
+ * @param value Основание степени.
+ * @param power Показатель степени (целое число).
  */
-template <typename T>
-FUNC_CONSTEXPR T sum(T a, T b) {
-    return a + b;
+void printPower(int value, int power) {
+    int result = 1;
+
+    // Алгоритм возведения в степень через цикл
+    for (int i = 0; i < power; ++i) {
+        result *= value;
+    }
+
+    // Вывод согласно требуемому формату
+    std::cout << value << " в степени " << power << " = " << result << std::endl;
 }
-
-/**
- * @brief Вычисляет разность двух чисел.
- * @tparam T Тип операндов.
- * @param a Уменьшаемое.
- * @param b Вычитаемое.
- * @return Результат вычитания (a - b).
- */
-template <typename T>
-FUNC_CONSTEXPR T diff(T a, T b) {
-    return a - b;
-}
-
-/**
- * @brief Вычисляет произведение двух чисел.
- * @tparam T Тип операндов.
- * @param a Первый множитель.
- * @param b Второй множитель.
- * @return Результат умножения.
- */
-template <typename T>
-FUNC_CONSTEXPR T multiplication(T a, T b) {
-    return a * b;
-}
-
-/**
- * @brief Выполняет деление первого числа на второе.
- * @details Функция выполняет приведение типов к double, чтобы избежать
- * потери дробной части при делении целых чисел.
- * @tparam T Тип операндов.
- * @param a Делимое.
- * @param b Делитель.
- * @return Частное в формате числа с плавающей запятой (double).
- */
-template <typename T>
-FUNC_CONSTEXPR double division(T a, T b) {
-    return static_cast<double>(a) / b;
-}
-
-
-
-
-
-
 /**
  * @brief Точка входа в программу.
  * * @details Процесс работы:
- * 1. Инициализация целочисленных переменных.
- * 2. Последовательный вызов функций вычисления.
- * 3. Форматированный вывод результатов.
- *
+ * 1.Вызов функции для чисел 5, 3 и 4 с соответствующими степенями.
  *
  * @return int Статус завершения программы (EXIT_SUCCESS в случае успеха).
  */
@@ -87,19 +41,10 @@ int main() {
     std::setlocale(LC_ALL, "Russian");
     #endif
 
-    // Инициализация базовых переменных как констант времени компиляции
-    VAR_CONSTEXPR int a = 5, b = 10;
-
-    // Вызовы функций
-    VAR_CONSTEXPR int s = sum(a, b);
-    VAR_CONSTEXPR int dif = diff(a, b);
-    VAR_CONSTEXPR int mult = multiplication(a, b);
-    VAR_CONSTEXPR double div = division(a, b);
-
-    std::cout << a << " + " << b << " = " << s << std::endl;
-    std::cout << a << " - " << b << " = " << dif << std::endl;
-    std::cout << a << " * " << b << " = " << mult << std::endl;
-    std::cout << a << " / " << b << " = " << div << std::endl;
+    // Вызываем функцию вместо дублирования кода
+    printPower(5, 2);
+    printPower(3, 3);
+    printPower(4, 4);
 
 
     return EXIT_SUCCESS;

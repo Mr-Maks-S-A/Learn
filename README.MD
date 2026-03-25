@@ -5,98 +5,21 @@
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
 
-## Арифметические функции<br>
-Учебный проект для реализации базовых вычислений (сумма, разность, умножение, деление)<br>
+## Устранение дублирования
+Программа демонстрирует использование функций для устранения дублирования кода
+на примере возведения числа в целую положительную степень.<br>
 
-Дополнительно от себя:<br>
-Функции помечены ключевым словом `constexpr`(FUNC_CONSTEXPR/VAR_CONSTEXPR), что позволяет производить
-вычисления на этапе компиляции, если аргументы являются константами.
-Использование шаблонов `<typename T>` обеспечивает универсальность типов.
 
-Так же для самого себя проведены встройки для генерации отдельных assembler фалов(просто чтобы они оставались после сборки).
- Relese версия не рассматривалась так как она всегда применяет максимальную оптимизацию.
-
-файлы ассемблера доступны в репозитории.<br>
 Console Out:<br>
 ```
-5 + 10 = 15
-5 - 10 = -5
-5 * 10 = 50
-5 / 10 = 0.5
+5 в степени 2 = 25
+3 в степени 3 = 27
+4 в степени 4 = 256
 ```
 
-![](README_IMG/6.1_Функции_и_их_параметры_Рекурсия-Арифметические_функции.png)
+![](README_IMG/6.2.0_Функции_и_их_параметры_Рекурсия-Устранение_дублирования.png)
+![](README_IMG/6.2.1_Функции_и_их_параметры_Рекурсия-Устранение_дублирования.png)
 
-## Сравнение:
-в режиме debug c выключенным constexpr 197 строк (224-27)<br>
-в режиме debug c включенным constexpr 179 строк (206-27)<br>
-
-разница 18 строк (для достаточно маленькой программы)<br>
-
-
-### сравнение версий ассемблера:<br>
-
-#### debug_constexpr_OFF:
-```assembler
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:96:     VAR_CONSTEXPR int a = 5, b = 10;
-	.loc 1 96 15
-	movl	$5, -28(%rbp)	#, a
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:96:     VAR_CONSTEXPR int a = 5, b = 10;
-	.loc 1 96 22
-	movl	$10, -24(%rbp)	#, b
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:99:     VAR_CONSTEXPR int s = sum(a, b);
-	.loc 1 99 22
-	movl	$10, %esi	#,
-	movl	$5, %edi	#,
-	call	_Z3sumIiET_S0_S0_	#
-	movl	%eax, -20(%rbp)	# tmp120, s
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:100:     VAR_CONSTEXPR int dif = diff(a, b);
-	.loc 1 100 25
-	movl	$10, %esi	#,
-	movl	$5, %edi	#,
-	call	_Z4diffIiET_S0_S0_	#
-	movl	%eax, -16(%rbp)	# tmp121, dif
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:101:     VAR_CONSTEXPR int mult = multiplication(a, b);
-	.loc 1 101 36
-	movl	$10, %esi	#,
-	movl	$5, %edi	#,
-	call	_Z14multiplicationIiET_S0_S0_	#
-	movl	%eax, -12(%rbp)	# tmp122, mult
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:102:     VAR_CONSTEXPR double div = division(a, b);
-	.loc 1 102 32
-	movl	$10, %esi	#,
-	movl	$5, %edi	#,
-	call	_Z8divisionIiEdT_S0_	#
-	movq	%xmm0, %rax	#, tmp123
-	movq	%rax, -8(%rbp)	# tmp123, div
-```
-
-#### debug_constexpr_ON:
-```assembler
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:96:     VAR_CONSTEXPR int a = 5, b = 10;
-	.loc 1 96 19
-	movl	$5, -28(%rbp)	#, a
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:96:     VAR_CONSTEXPR int a = 5, b = 10;
-	.loc 1 96 26
-	movl	$10, -24(%rbp)	#, b
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:99:     VAR_CONSTEXPR int s = sum(a, b);
-	.loc 1 99 19
-	movl	$15, -20(%rbp)	#, s
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:100:     VAR_CONSTEXPR int dif = diff(a, b);
-	.loc 1 100 19
-	movl	$-5, -16(%rbp)	#, dif
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:101:     VAR_CONSTEXPR int mult = multiplication(a, b);
-	.loc 1 101 19
-	movl	$50, -12(%rbp)	#, mult
-# /mnt/HDD_DataStore/! 01 Programming_Project_Save/01 C++/Learn/main.cpp:102:     VAR_CONSTEXPR double div = division(a, b);
-	.loc 1 102 22
-	movsd	.LC0(%rip), %xmm0	#, tmp120
-	movsd	%xmm0, -8(%rbp)	# tmp120, div
-```
-
-![](README_IMG/6.1.1_Функции_и_их_параметры_Рекурсия-Арифметические_функции.png)
-
-![](README_IMG/6.1.2_Функции_и_их_параметры_Рекурсия-Арифметические_функции.png)
 
 ---
 # 📊 Прогресс обучения

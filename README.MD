@@ -9,18 +9,18 @@
 
 
 ### Console Out:<br>
-OS: CachyOS x86_64
-Kernel: Linux 6.19.9-1-cachyos
-Shell: fish 4.5.0
-DE: KDE Plasma 6.6.3
-WM: KWin (Wayland)
-Terminal: alacritty 0.16.1
-CPU: AMD Ryzen 7 3700X (16) @ 4.43 GHz
-Locale: ru_RU.UTF-8 (+en_US.utf8)
+OS: CachyOS x86_64<br>
+Kernel: Linux 6.19.9-1-cachyos<br>
+Shell: fish 4.5.0<br>
+DE: KDE Plasma 6.6.3<br>
+WM: KWin (Wayland)<br>
+Terminal: alacritty 0.16.1<br>
+CPU: AMD Ryzen 7 3700X (16) @ 4.43 GHz<br>
+Locale: ru_RU.UTF-8 (+en_US.utf8)<br>
 
-
-
-
+<br>
+<br>
+---
 **GCC_GNU 15.2.1/x64/Debug**
 ```
 short: 0x7ffdf3f7413e 2
@@ -32,11 +32,9 @@ double: 0x7ffdf3f74158 8
 long double: 0x7ffdf3f74160 16
 bool: 0x7ffdf3f7413d 1
 ```
-
 ![](README_IMG/7.1.1_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-
-
-
+<br>
+---
 **GCC_GNU 15.2.1/x86(32)/Debug**
 ```
 short: 0xffcb6f92 2
@@ -48,13 +46,11 @@ double: 0xffcb6fa8 8
 long double: 0xffcb6fb0 12
 bool: 0xffcb6f91 1
 ```
-
 ![](README_IMG/7.1.2_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-
+<br>
+<br>
+<br>
 ---
-
-
-
 **Clang 22.1.1/x64/Debug**
 ```
 short: 0x7ffffd081fd2 2
@@ -66,11 +62,9 @@ double: 0x7ffffd081fb0 8
 long double: 0x7ffffd081fa0 16
 bool: 0x7ffffd081f9f 1
 ```
-
 ![](README_IMG/7.1.3_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-
-
-
+<br>
+---
 **Clang 22.1.1/x86(32)/Debug**
 ```
 short: 0xff93ab3a 2
@@ -82,10 +76,10 @@ double: 0xff93ab18 8
 long double: 0xff93ab0c 12
 bool: 0xff93ab0b 1
 ```
-
 ![](README_IMG/7.1.4_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-
-
+<br>
+<br>
+<br>
 ---
 # 📊 Прогресс обучения
 -  9  **Указатели. Массивы и параметры функций**<br>

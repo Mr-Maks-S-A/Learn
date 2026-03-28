@@ -18,8 +18,6 @@ Terminal: alacritty 0.16.1<br>
 CPU: AMD Ryzen 7 3700X (16) @ 4.43 GHz<br>
 Locale: ru_RU.UTF-8 (+en_US.utf8)<br>
 
-<br>
-<br>
 ---
 **GCC_GNU 15.2.1/x64/Debug**
 ```
@@ -33,7 +31,7 @@ long double: 0x7ffdf3f74160 16
 bool: 0x7ffdf3f7413d 1
 ```
 ![](README_IMG/7.1.1_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-<br>
+
 ---
 **GCC_GNU 15.2.1/x86(32)/Debug**
 ```
@@ -47,9 +45,8 @@ long double: 0xffcb6fb0 12
 bool: 0xffcb6f91 1
 ```
 ![](README_IMG/7.1.2_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-<br>
-<br>
-<br>
+
+
 ---
 **Clang 22.1.1/x64/Debug**
 ```
@@ -63,7 +60,7 @@ long double: 0x7ffffd081fa0 16
 bool: 0x7ffffd081f9f 1
 ```
 ![](README_IMG/7.1.3_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-<br>
+
 ---
 **Clang 22.1.1/x86(32)/Debug**
 ```
@@ -77,9 +74,7 @@ long double: 0xff93ab0c 12
 bool: 0xff93ab0b 1
 ```
 ![](README_IMG/7.1.4_Модель_памяти_и_хранение_данных-Адреса_переменных.png)
-<br>
-<br>
-<br>
+
 ---
 # 📊 Прогресс обучения
 -  9  **Указатели. Массивы и параметры функций**<br>

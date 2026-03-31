@@ -36,7 +36,7 @@ x = 6, y = 9
  
 -  8  **Область видимости переменных и типы памяти. Пространства имён**<br>
    - [x] Задание 1. Считающая функция ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v8.1#))<br>
-   - [x] Задание 2. Обмен значениями ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v8.2#))<br>
+   - [x] Задание 2. Одинаковые, но разные функции ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v8.2#))<br>
 -  7  **Модель памяти и хранение данных**<br>
    - [x] Задание 1. Адреса переменных ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v7.1#))<br>
    - [x] Задание 2. Одинаковые, но разные функции ([Ref](https://github.com/Mr-Maks-S-A/Learn/tree/v7.2#))<br>

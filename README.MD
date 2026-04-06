@@ -25,15 +25,19 @@
 ---
 
 
+<details open>
+<summary><b>🟦 Блок 1.8 — 1.6: Функции и Память</b></summary>
+<br>
 
+- [x] `1.8.1` **Считающая функция** <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github" height="25"></a>
 
-| ID | Задача | Тип | Ссылка |
-| :--- | :--- | :--- | :--- |
-| `1.8.1` | Считающая функция | ![Func](https://img.shields.io/badge/-function-0075ca?style=flat-square) | [Открыть ↗](https://github.com/Mr-Maks-S-A/Learn/tree/v8.1) |
-| `1.8.2` | Одинаковые функции | ![Func](https://img.shields.io/badge/-function-0075ca?style=flat-square) | [Открыть ↗](https://github.com/Mr-Maks-S-A/Learn/tree/v8.2) |
-| `1.13` | **Game of Life** | ![Project](https://img.shields.io/badge/-final_boss-ff69b4?style=flat-square) | [В разработке...](#) |
+- [x] `1.8.2` **Одинаковые функции** <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github" height="25"></a>
 
+- [x] `1.7.1` **Адреса переменных** <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Посмотреть_код-17a2b8?style=for-the-badge&logo=github" height="25"></a>
 
+- [x] `1.6.1` **Арифметические функции** <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.1"><img src="https://img.shields.io/badge/Посмотреть_код-d73a4a?style=for-the-badge&logo=github" height="25"></a>
+
+</details>
 
 
 

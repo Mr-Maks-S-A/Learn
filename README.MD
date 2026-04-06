@@ -49,10 +49,56 @@ cmake --help
 
 
 <details open>
-<summary>
-#### 1 Основы программирования на C++
-</summary>
+<summary><b>1 Основы программирования на C++</b></summary>
 <br>
+
+
+<details open>
+  <summary><b>📂 99999 Тест чистого HTML </b></summary>
+  <br>
+  <table width="100%">
+    <tr>
+      <td width="20%" style="border: none;"></td>
+      <td style="border: none;">
+        <table width="100%">
+          <thead>
+            <tr align="center">
+              <th width="10%">Статус</th>
+              <th width="10%">ID</th>
+              <th>Описание задачи</th>
+              <th width="15%">Ссылка</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr align="center">
+              <td>⏳</td>
+              <td><code>1.9.1</code></td>
+              <td align="left">Вывод массива</td>
+              <td>
+                <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1">
+                  <img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20">
+                </a>
+              </td>
+            </tr>
+            <tr align="center">
+              <td>⏳</td>
+              <td><code>1.9.2</code></td>
+              <td align="left">Снова swap</td>
+              <td>
+                <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2">
+                  <img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</details>
+
+
+
 
  <details open>
   <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
@@ -75,37 +121,31 @@ cmake --help
 
   <details open>
   <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
-  
-  <div align="center">
-  <br>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.8.2` | Одинаковые, но разные функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
   
   <details open>
-  <summary><b>📂 1.7.0 Модель памяти и хранение данных.</b></summary>
-  
-  <div align="center">
-  <br>
+  <summary><b>📂 1.7.0 Модель памяти и хранение данных</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.7.1` | Адреса переменных | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.7.2` | Обмен значениями | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
   
   <details open>
-  <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия.</b></summary>
-
-  <div align="center">
-  <br>
+  <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
@@ -113,14 +153,12 @@ cmake --help
   | ✅ | `1.6.2` | Устранение дублирования. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.6.3` | Числа Фибоначчи. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
-  
+
   <details open>
-  <summary><b>📂 1.5.0 Массивы.</b></summary>
-  
-  <div align="center">
-  <br>
+  <summary><b>📂 1.5.0 Массивы</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
@@ -129,14 +167,12 @@ cmake --help
   | ✅ | `1.5.3` | Двумерный массив. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.5.4` | Обратный пузырёк. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.4"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
-  
+
   <details open>
-  <summary><b>📂 1.4.0 Циклические конструкции. </b></summary>
-  
-  <div align="center">
-  <br>
+  <summary><b>📂 1.4.0 Циклические конструкции</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
@@ -144,14 +180,12 @@ cmake --help
   | ✅ | `1.4.2` | Сумма цифр числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.4.3` | Таблица умножения для числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
-  
+
   <details open>
-  <summary><b>📂 1.3.0  Операторы ветвления. Логические операции.</b></summary>
-  
-  <div align="center">
-  <br>
+  <summary><b>📂 1.3.0 Операторы ветвления</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
@@ -160,35 +194,32 @@ cmake --help
   | ✅ | `1.3.3` | Гороскоп. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.3.4` | Сравнить числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
 
   <details open>
-  <summary><b>📂 1.2.0 Переменные и их типы.</b></summary>
-
-  <div align="center">
-  <br>
+  <summary><b>📂 1.2.0 Переменные и их типы</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.2.1` | Повторите число. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.2.2` | Повторите слово. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
-  
+
   <details open>
-  <summary><b>📂 1.1.0 Знакомство с C++. </b></summary>
-  
-  <div align="center">
-  <br>
+  <summary><b>📂 1.1.0 Знакомство с C++</b></summary>
+  <table border="0"><tr><td width="20%"></td><td>
   
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.1.1` | Написать первую программу. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   
-  </div>
+  </td></tr></table>
   </details>
+
 </details>
 
 

@@ -440,6 +440,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -448,6 +449,11 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.1.1</code></td>
                 <td align="left">Написать первую программу</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.1_Helloworld.png">
+                    <img src="README_IMG/1.1_Helloworld.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>

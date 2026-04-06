@@ -75,7 +75,9 @@ cmake --help
                 <td><code>1.9.1</code></td>
                 <td align="left">Вывод массива</td>
                 <td>
-                  <img src="README_IMG/1.1_Helloworld.png" height="40" alt="Preview">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.1_Helloworld.png">
+                    <img src="README_IMG/1.1_Helloworld.png" height="40" alt="Preview">
+                  </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>

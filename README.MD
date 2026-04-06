@@ -1,14 +1,23 @@
-<div align="center">
+<div align="right">
+  <a href="https://github.com/Mr-Maks-S-A/Learn">
+    <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/Documentation-gray?style=social&logo=read-the-docs" height="25">
+  </a>
+</div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 C++ Learning Journey
+# Одинаковые, но разные функции
 
-</div>
+Программа демонстрирует использование пространств имен (**namespace**) для создания функций с идентичными сигнатурами, выполняющих различные арифметические операции. 
 
-### 🖥️ System Environment
+> **Примечание:** 
+
+### 🖥️ Окружение (Console Out)
 | Property | Value |
 | :--- | :--- |
 | **OS** | CachyOS x86_64 (Linux 6.19.9) |
@@ -17,162 +26,111 @@
 | **Terminal** | alacritty 0.16.1 |
 | **CPU** | AMD Ryzen 7 3700X @ 4.43 GHz |
 
----
+### 🚀 Пример работы
 
+```code
+la la la
+```
 ### 🖼️ Preview
 ![](README_IMG/8.2_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Одинаковые_но_разные_функции.png)
 
 ---
 
-# 📊 Учебный план: Часть 1 (Основы)
+### 📊 Прогресс обучения
 
----
 
 <details open>
-<summary><b>📂 1.8. Область видимости и пространства имён</b></summary>
+<summary><b> 1) Основы программирования на C++</b></summary>
 <br>
 
-| Статус | ID | Описание задачи | Ссылка |
-| :---: | :---: | :--- | :--- |
-| ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ✅ | `1.8.2` | Одинаковые функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ⏳ | `1.8.3` | Статические переменные | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ⏳ | `1.8.4` | Пространства имен `namespace` | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  <details open>
+  <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
+  <br>
 
-</details>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ⏳ | `1.9.1` | Вывод массива | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ⏳ | `1.9.2` | Снова swap | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ⏳ | `1.9.3` | Переворот массива | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
 
+  </details>
 
-1
-<table align="center">
-  <tr>
-    <td bgcolor="#0075ca" align="center" style="padding: 10px 20px; border-radius: 8px;">
-      <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v13.0" style="color: white; text-decoration: none; font-weight: bold; font-family: sans-serif;">
-        <img src="https://img.shields.io/badge/-Запустить_проект-white?style=flat-square&logo=render&logoColor=0075ca" height="20" align="center"> 
-        &nbsp; ОТКРЫТЬ GAME OF LIFE ↗
-      </a>
-    </td>
-  </tr>
-</table>
+  <details open>
+  <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.8.2` | Одинаковые, но разные функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.7.0 Модель памяти и хранение данных.</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.7.1` | Адреса переменных | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.7.2` | Обмен значениями | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия.</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.6.1` | Арифметические функции. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.6.2` | Устранение дублирования. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.6.3` | Числа Фибоначчи. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.5.0 Массивы.</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.5.1` | Вывод массива на экран. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.5.2` | Максимум и минимум. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.5.3` | Двумерный массив. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.5.4` | Обратный пузырёк. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.4"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.4.0 Циклические конструкции. </b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.4.1` | Сумматор. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.4.2` | Сумма цифр числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.4.3` | Таблица умножения для числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.3.0  Операторы ветвления. Логические операции.</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.3.1` | Таблица истинности. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.3.2` | Упорядочить числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.3.3` | Гороскоп. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.3.4` | Сравнить числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
 
-
-2
-
-<div align="center">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
-    <img src="https://img.shields.io/badge/ПОСМОТРЕТЬ_ИСХОДНЫЙ_КОД-0075ca?style=for-the-badge&logo=github&logoColor=white" height="40">
-  </a>
-</div>
-
-
-
-3
-
-<div align="center">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
-    <kbd> <b>Перейти к ветке v8.1</b> </kbd>
-  </a>
-</div>
-
-4
-<a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
-  <img src="https://img.shields.io/badge/—_ПОСМОТРЕТЬ_РЕШЕНИЕ_—-0075ca?style=for-the-badge&logo=github&logoColor=white" width="100%">
-</a>
-
-5
-<a href="URL_ССЫЛКИ">
-  <img src="https://img.shields.io/badge/ЗАДАНИЕ-1.8.1-282c34?style=for-the-badge&logo=cplusplus">
-  <img src="https://img.shields.io/badge/ОТКРЫТЬ-0075ca?style=for-the-badge&logo=external-link">
-</a>
-
-6
-
-<div align="right">
-  <a href="URL">
-    <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
-  </a>
-  <a href="URL">
-    <img src="https://img.shields.io/badge/Documentation-gray?style=social&logo=read-the-docs" height="25">
-  </a>
-</div>
-
-<details open>
-<summary><b>📂 1.8. Область видимости и пространства имён</b></summary>
-<br>
-
-| Статус | ID | Описание задачи | Ссылка |
-| :---: | :---: | :--- | :--- |
-| ![](https://img.shields.io/badge/DONE-28a745?style=flat-square) | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ![](https://img.shields.io/badge/DONE-28a745?style=flat-square) | `1.8.2` | Одинаковые функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ![](https://img.shields.io/badge/TODO-6c757d?style=flat-square) | `1.8.3` | Статические переменные | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| ![](https://img.shields.io/badge/TODO-6c757d?style=flat-square) | `1.8.4` | Пространства имен `namespace` | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-
-</details>
-
-
----
-
-### 🏆 1.13. Финальный Босс: Game of Life
-<div align="left">
-  <p>Объединение всех пройденных тем в один проект.</p>
-  <a href="#"><img src="https://img.shields.io/badge/PROJECT-IN_PROGRESS-ff69b4?style=for-the-badge&logo=render&logoColor=white" height="30"></a>
-</div>
-
----
-
-### 🏆 1.13. Финальный Босс: Game of Life
-<div align="left">
-  <p>Объединение всех пройденных тем в один проект.</p>
-  <a href="#"><img src="https://img.shields.io/badge/PROJECT-IN_PROGRESS-ff69b4?style=for-the-badge&logo=render&logoColor=white" height="30"></a>
-</div>
-
-
-
-
-
-
-
-
-
-
-# 📊 Прогресс обучения
-<details open>
-### 📂 9. Указатели. Массивы и параметры функций
-- [ ] *Раздел в процессе освоения...*
-
-### 📂 8. Область видимости и типы памяти
-- [x] Задание 1. Считающая функция [![](https://img.shields.io/badge/func-Ref-0075ca?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v8.1)
-- [x] Задание 2. Одинаковые, но разные функции [![](https://img.shields.io/badge/func-Ref-0075ca?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v8.2)
-
-### 📂 7. Модель памяти и хранение данных
-- [x] Задание 1. Адреса переменных [![](https://img.shields.io/badge/var-Ref-17a2b8?style=flat-square&logo=cachet&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v7.1)
-- [x] Задание 2. Одинаковые, но разные функции [![](https://img.shields.io/badge/func-Ref-0075ca?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v7.2)
-
-### 📂 6. Функции и их параметры. Рекурсия
-- [x] Задание 1. Арифметические функции [![](https://img.shields.io/badge/math-Ref-d73a4a?style=flat-square&logo=calculator&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v6.1)
-- [x] Задание 2. Устранение дублирования [![](https://img.shields.io/badge/func-Ref-0075ca?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v6.2)
-- [x] Задание 3. Числа Фибоначчи [![](https://img.shields.io/badge/func-Ref-0075ca?style=flat-square&logo=gitbook&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v6.3)
-
-### 📂 5. Массивы
-- [x] Задание 1. Вывод массива [![](https://img.shields.io/badge/array-Ref-28a745?style=flat-square&logo=levelsdotfyi&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v5.1)
-- [x] Задание 2. Максимум и минимум [![](https://img.shields.io/badge/array-Ref-28a745?style=flat-square&logo=levelsdotfyi&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v5.2)
-- [x] Задание 3. Двумерный массив [![](https://img.shields.io/badge/array-Ref-28a745?style=flat-square&logo=levelsdotfyi&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v5.3)
-- [x] Задание 4. Обратный пузырёк [![](https://img.shields.io/badge/array-Ref-28a745?style=flat-square&logo=levelsdotfyi&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v5.4)
-
-### 📂 4. Циклические конструкции
-- [x] Задание 1. Сумматор [![](https://img.shields.io/badge/loop-Ref-6f42c1?style=flat-square&logo=retry&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v4.1)
-- [x] Задание 2. Сумма цифр [![](https://img.shields.io/badge/loop-Ref-6f42c1?style=flat-square&logo=retry&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v4.2)
-- [x] Задание 3. Таблица умножения [![](https://img.shields.io/badge/loop-Ref-6f42c1?style=flat-square&logo=retry&logoColor=white)](https://github.com/Mr-Maks-S-A/Learn/tree/v4.3)
-
-### 📂 3. Операторы ветвления
-- [x] Задание 1. Таблица истинности <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.1">![Ref](https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github)</a>
-- [x] Задание 2. Упорядочить числа <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.2">![Ref](https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github)</a>
-
-
-### 📂 2. N
-
-### 📂 1. Установка окружения
-- [x] Настройка среды <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0">![Ref](https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github)</a>
-
+  <details open>
+  <summary><b>📂 1.2.0 Переменные и их типы.</b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.2.1` | Повторите число. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  | ✅ | `1.2.2` | Повторите слово. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
+  
+  <details open>
+  <summary><b>📂 1.1.0 Знакомство с C++. </b></summary>
+  <br>
+  | Статус | ID | Описание задачи | Ссылка |
+  | :---: | :---: | :--- | :--- |
+  | ✅ | `1.1.1` | Написать первую программу. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  </details>
 </details>
 
 

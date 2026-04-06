@@ -47,57 +47,11 @@ cmake --help
 
 ### 📊 Прогресс обучения
 
-
 <details open>
 <summary><b>1 Основы программирования на C++</b></summary>
 <br>
 
-<details open>
-    <summary><b>📂 99999</b></summary>
-    <br>
-    <table width="100%">
-      <tr>
-        <td width="20%" style="border: none;"></td>
-        <td style="border: none;">
-          <table width="100%">
-            <thead>
-              <tr align="center">
-                <th width="10%">Статус</th>
-                <th width="10%">ID</th>
-                <th>Описание задачи</th>
-                <th width="20%">Preview</th>
-                <th width="15%">Ссылка</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr align="center">
-                <td>⏳</td>
-                <td><code>1.9.1</code></td>
-                <td align="left">Вывод массива</td>
-                <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.1_Helloworld.png">
-                    <img src="README_IMG/1.1_Helloworld.png" height="40" alt="Preview">
-                  </a>
-                </td>
-                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
-              </tr>
-              <tr align="center">
-                <td>⏳</td>
-                <td><code>1.9.2</code></td>
-                <td align="left">Снова swap</td>
-                <td>
-                  <img src="README_IMG/1.9.2_task.png" height="40" alt="Preview">
-                </td>
-                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </details>
-
-  <details open>
+  <details>
     <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
     <br>
     <table width="100%">
@@ -139,7 +93,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
     <br>
     <table width="100%">
@@ -175,7 +129,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.7.0 Модель памяти и хранение данных</b></summary>
     <br>
     <table width="100%">
@@ -211,7 +165,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия</b></summary>
     <br>
     <table width="100%">
@@ -253,7 +207,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.5.0 Массивы</b></summary>
     <br>
     <table width="100%">
@@ -301,7 +255,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.4.0 Циклические конструкции</b></summary>
     <br>
     <table width="100%">
@@ -343,7 +297,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.3.0 Операторы ветвления. Логические операции</b></summary>
     <br>
     <table width="100%">
@@ -391,7 +345,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.2.0 Переменные и их типы</b></summary>
     <br>
     <table width="100%">
@@ -404,6 +358,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -412,12 +367,22 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.2.1</code></td>
                 <td align="left">Повторите число</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/2.1_Переменные_и_их_типы-Повторите_Число.png">
+                    <img src="README_IMG/2.1_Переменные_и_их_типы-Повторите_Число.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.2.2</code></td>
                 <td align="left">Повторите слово</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/2.2_Переменные_и_их_типы-Повторите_слово.png">
+                    <img src="README_IMG/2.2_Переменные_и_их_типы-Повторите_слово.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -427,7 +392,7 @@ cmake --help
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.1.0 Знакомство с C++</b></summary>
     <br>
     <table width="100%">

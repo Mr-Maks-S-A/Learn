@@ -27,17 +27,46 @@
 
 
 
-### 📂 1.8. Область видимости и типы памяти
-<div align="left">
-  <p>
-    <code>1.8.1</code> Задание 1. Считающая функция 
-    <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=gitbook&logoColor=white" height="20"></a>
-  </p>
-  <p>
-    <code>1.8.2</code> Задание 2. Одинаковые, но разные функции 
-    <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=gitbook&logoColor=white" height="20"></a>
-  </p>
-</div>
+| ID | Задача | Тип | Ссылка |
+| :--- | :--- | :--- | :--- |
+| `1.8.1` | Считающая функция | ![Func](https://img.shields.io/badge/-function-0075ca?style=flat-square) | [Открыть ↗](https://github.com/Mr-Maks-S-A/Learn/tree/v8.1) |
+| `1.8.2` | Одинаковые функции | ![Func](https://img.shields.io/badge/-function-0075ca?style=flat-square) | [Открыть ↗](https://github.com/Mr-Maks-S-A/Learn/tree/v8.2) |
+| `1.13` | **Game of Life** | ![Project](https://img.shields.io/badge/-final_boss-ff69b4?style=flat-square) | [В разработке...](#) |
+
+
+
+
+
+
+> ### 🟦 1.8. Область видимости
+> `1.8.1` **Считающая функция** > <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">![Ref](https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github)</a>
+>
+> `1.8.2` **Одинаковые функции**
+> <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2">![Ref](https://img.shields.io/badge/Посмотреть_код-0075ca?style=for-the-badge&logo=github)</a>
+
+> ### 🟧 1.13. Итоговый проект
+> `1.13.1` **Game of Life** — *Финал первой части*
+> <br>![Progress](https://img.shields.io/badge/Status-In_Development-yellow?style=for-the-badge)
+
+
+
+
+
+### 🛠 Раздел 1.8: Переменные
+
+<a href="https://github.com/v8.1">
+  <img src="https://img.shields.io/badge/1.8.1-Ref_Link-0075ca?style=for-the-badge&logo=cplusplus" />
+</a>
+<a href="https://github.com/v8.2">
+  <img src="https://img.shields.io/badge/1.8.2-Ref_Link-0075ca?style=for-the-badge&logo=cplusplus" />
+</a>
+
+---
+
+### 🏆 Итог (1.13)
+<a href="#">
+  <img src="https://img.shields.io/badge/1.13_GAME_OF_LIFE-START_PROJECT-success?style=for-the-badge&logo=render&logoColor=white" />
+</a>
 
 
 

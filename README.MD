@@ -84,7 +84,7 @@ cmake --help
                 <td>⏳</td>
                 <td><code>1.9.2</code></td>
                 <td align="left">Снова swap</td>
-                td>
+                <td>
                   <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
                     <img src="" height="40" alt="NO_IMG">
                   </a>
@@ -95,7 +95,7 @@ cmake --help
                 <td>⏳</td>
                 <td><code>1.9.3</code></td>
                 <td align="left">Переворот массива</td>
-                td>
+                <td>
                   <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
                     <img src="" height="40" alt="NO_IMG">
                   </a>

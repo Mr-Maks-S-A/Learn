@@ -64,6 +64,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -72,18 +73,33 @@ cmake --help
                 <td>⏳</td>
                 <td><code>1.9.1</code></td>
                 <td align="left">Вывод массива</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>⏳</td>
                 <td><code>1.9.2</code></td>
                 <td align="left">Снова swap</td>
+                td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>⏳</td>
                 <td><code>1.9.3</code></td>
                 <td align="left">Переворот массива</td>
+                td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -106,6 +122,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -114,12 +131,22 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.8.1</code></td>
                 <td align="left">Считающая функция</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/8.1_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Обмен_значениями.png">
+                    <img src="README_IMG/8.1_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Обмен_значениями.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.8.2</code></td>
                 <td align="left">Одинаковые, но разные функции</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/8.2_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Одинаковые_но_разные_функции.png">
+                    <img src="README_IMG/8.2_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Одинаковые_но_разные_функции.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -142,6 +169,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -150,12 +178,22 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.7.1</code></td>
                 <td align="left">Адреса переменных</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/7.1.1_Модель_памяти_и_хранение_данных-Адреса_переменных.png">
+                    <img src="README_IMG/7.1.1_Модель_памяти_и_хранение_данных-Адреса_переменных.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.7.2</code></td>
                 <td align="left">Обмен значениями</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/7.2.1_Модель_памяти_и_хранение_данных-Обмен_значениями.png">
+                    <img src="README_IMG/7.2.1_Модель_памяти_и_хранение_данных-Обмен_значениями.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -178,6 +216,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -186,18 +225,33 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.6.1</code></td>
                 <td align="left">Арифметические функции</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/6.1.1_Функции_и_их_параметры_Рекурсия-Арифметические_функции.png">
+                    <img src="README_IMG/6.1.1_Функции_и_их_параметры_Рекурсия-Арифметические_функции.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.6.2</code></td>
                 <td align="left">Устранение дублирования</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/6.2.1_Функции_и_их_параметры_Рекурсия-Устранение_дублирования.png">
+                    <img src="README_IMG/6.2.1_Функции_и_их_параметры_Рекурсия-Устранение_дублирования.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.6.3</code></td>
                 <td align="left">Числа Фибоначчи</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/6.3_Функции_и_их_параметры_Рекурсия-Числа_Фибоначчи.png">
+                    <img src="README_IMG/6.3_Функции_и_их_параметры_Рекурсия-Числа_Фибоначчи.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -220,6 +274,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -228,24 +283,44 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.5.1</code></td>
                 <td align="left">Вывод массива на экран</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/5.1_Массивы-Вывод_массива_на_экран.png">
+                    <img src="README_IMG/5.1_Массивы-Вывод_массива_на_экран.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.5.2</code></td>
                 <td align="left">Максимум и минимум</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/5.2_Массивы-Максимум_и_минимум.png">
+                    <img src="README_IMG/5.2_Массивы-Максимум_и_минимум.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.5.3</code></td>
                 <td align="left">Двумерный массив</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/5.3_Массивы-Двумерный_массив.png">
+                    <img src="README_IMG/5.3_Массивы-Двумерный_массив.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.5.4</code></td>
                 <td align="left">Обратный пузырёк</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/5.4_Массивы-Обратный_пузырёк.png">
+                    <img src="README_IMG/5.4_Массивы-Обратный_пузырёк.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.4"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -268,6 +343,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -276,18 +352,33 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.4.1</code></td>
                 <td align="left">Сумматор</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/4.1_Циклические_конструкции-Сумматор.png">
+                    <img src="README_IMG/4.1_Циклические_конструкции-Сумматор.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.4.2</code></td>
                 <td align="left">Сумма цифр числа</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/4.2_Циклические_конструкции-Сумма_цифр_числа.png">
+                    <img src="README_IMG/4.2_Циклические_конструкции-Сумма_цифр_числа.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.4.3</code></td>
                 <td align="left">Таблица умножения для числа</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/4.3_Циклические_конструкции-Таблица_умножения_для_числа.png">
+                    <img src="README_IMG/4.3_Циклические_конструкции-Таблица_умножения_для_числа.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
@@ -310,6 +401,7 @@ cmake --help
                 <th width="10%">Статус</th>
                 <th width="10%">ID</th>
                 <th>Описание задачи</th>
+                <th width="20%">Preview</th>
                 <th width="15%">Ссылка</th>
               </tr>
             </thead>
@@ -318,24 +410,44 @@ cmake --help
                 <td>✅</td>
                 <td><code>1.3.1</code></td>
                 <td align="left">Таблица истинности</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/3.1_Операторы_ветвления_Логические_операции-Таблица_истинности.png">
+                    <img src="README_IMG/3.1_Операторы_ветвления_Логические_операции-Таблица_истинности.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.3.2</code></td>
                 <td align="left">Упорядочить числа</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/3.2_Операторы_ветвления_Логические_операции-Упорядочить_числа.png">
+                    <img src="README_IMG/3.2_Операторы_ветвления_Логические_операции-Упорядочить_числа.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.3.3</code></td>
                 <td align="left">Гороскоп</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/3.3_Операторы_ветвления_Логические_операции-Гороскоп.png">
+                    <img src="README_IMG/3.3_Операторы_ветвления_Логические_операции-Гороскоп.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
                 <td>✅</td>
                 <td><code>1.3.4</code></td>
                 <td align="left">Сравнить числа</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/3.4_Операторы_ветвления_Логические_операции-Сравнение_чисел.png">
+                    <img src="README_IMG/3.4_Операторы_ветвления_Логические_операции-Сравнение_чисел.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>

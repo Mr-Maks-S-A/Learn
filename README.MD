@@ -48,16 +48,18 @@ cmake --help
 ### 📊 Прогресс обучения
 
 
-
-#### 1 Основы программирования на C++
 <details open>
+<summary>
+#### 1 Основы программирования на C++
+</summary>
 <br>
 
-  <details open>
+ <details open>
   <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
-  
-  <div align="center">
-  <br>
+
+  <table border="0">
+  <tr>
+  <td width="20%"></td> <td>
 
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
@@ -65,7 +67,10 @@ cmake --help
   | ⏳ | `1.9.2` | Снова swap | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ⏳ | `1.9.3` | Переворот массива | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
 
-  </div>
+  </td>
+  </tr>
+  </table>
+
   </details>
 
   <details open>

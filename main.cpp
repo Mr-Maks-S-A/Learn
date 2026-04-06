@@ -1,8 +1,7 @@
 /**
- * @mainpage Программа "Одинаковые, но разные функции"
+ * @mainpage Программа ""
  * @section desc Описание
- * Программа демонстрирует использование пространств имен (namespace) для создания
- * функций с идентичными сигнатурами, выполняющих различные арифметические операции.
+ *
  *
  * @author Салакатов Максим Альбертович aka (Jarko || Mr-Maks-S-A)
  */
@@ -14,51 +13,11 @@
 
 
 
-/** @namespace Addition Содержит реализацию сложения */
-namespace Addition {
-    template <typename T>
-    T calc(T x, T y) {
-        static_assert(std::is_arithmetic<T>::value, "Тип должен быть числовым!");
-        return x + y;
-    }
-}
-
-/** @namespace Subtraction Содержит реализацию вычитания */
-namespace Subtraction {
-    template <typename T>
-    T calc(T x, T y) {
-        static_assert(std::is_arithmetic<T>::value, "Тип должен быть числовым!");
-        return x - y;
-    }
-}
-
-/** @namespace Multiplication Содержит реализацию умножения */
-namespace Multiplication {
-    template <typename T>
-    T calc(T x, T y) {
-        static_assert(std::is_arithmetic<T>::value, "Тип должен быть числовым!");
-        return x * y;
-    }
-}
-
-/** @namespace Division Содержит реализацию деления */
-namespace Division {
-    template <typename T>
-    T calc(T x, T y) {
-        static_assert(std::is_arithmetic<T>::value, "Тип должен быть числовым!");
-        if (y == 0) return 0; // Базовая защита от деления на ноль
-        return x / y;
-    }
-}
-
-
 
 /**
  * @brief Точка входа в программу.
  * * @details Процесс работы:
  * 1. Инициализация локали и тестовых переменных x и y.
- * 2. Последовательный вызов функций calc из разных пространств имен.
- * 3. Вывод результатов арифметических действий в консоль.
  *
  * @return int Статус завершения программы (EXIT_SUCCESS в случае успеха).
  */
@@ -68,17 +27,6 @@ int main() {
     std::setlocale(LC_ALL, "Russian");
     #endif
 
-
-    int x = 6;
-    int y = 9;
-
-    std::cout << "x = " << x << ", y = " << y << std::endl;
-
-    // Вызовы функций с указанием конкретного пространства имен
-    std::cout << "Сложение: " << Addition::calc(x, y) << std::endl;
-    std::cout << "Вычитание: " << Subtraction::calc(x, y) << std::endl;
-    std::cout << "Умножение: " << Multiplication::calc(x, y) << std::endl;
-    std::cout << "Деление: "   << Division::calc(x, y) << std::endl;
 
     return EXIT_SUCCESS;
 }

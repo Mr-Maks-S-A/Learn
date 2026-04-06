@@ -11,9 +11,8 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# Одинаковые, но разные функции
+# 💻 C++ Learning Journey
 
-Программа демонстрирует использование пространств имен (**namespace**) для создания функций с идентичными сигнатурами, выполняющих различные арифметические операции. 
 
 > **Примечание:** 
 
@@ -26,13 +25,20 @@
 | **Terminal** | alacritty 0.16.1 |
 | **CPU** | AMD Ryzen 7 3700X @ 4.43 GHz |
 
-### 🚀 Пример работы
+### 🚀 Пример работы программы
 
+#### Вывод в консоль
 ```code
 la la la
 ```
+
+
 ### 🖼️ Preview
 ![](README_IMG/8.2_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Одинаковые_но_разные_функции.png)
+####  Commands
+```bash
+cmake --help
+```
 
 ---
 
@@ -44,6 +50,7 @@ la la la
 <br>
 
   <details open>
+  <div align="center">
   <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
   <br>
 
@@ -53,27 +60,35 @@ la la la
   | ⏳ | `1.9.2` | Снова swap | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ⏳ | `1.9.3` | Переворот массива | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
 
+  </div>
   </details>
 
   <details open>
+  <div align="center">
   <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.8.2` | Одинаковые, но разные функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.7.0 Модель памяти и хранение данных.</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.7.1` | Адреса переменных | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.7.2` | Обмен значениями | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия.</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
@@ -81,9 +96,12 @@ la la la
   | ✅ | `1.6.1` | Арифметические функции. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.6.2` | Устранение дублирования. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.6.3` | Числа Фибоначчи. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.5.0 Массивы.</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
@@ -92,9 +110,12 @@ la la la
   | ✅ | `1.5.2` | Максимум и минимум. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.5.3` | Двумерный массив. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.5.4` | Обратный пузырёк. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.4"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.4.0 Циклические конструкции. </b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
@@ -102,9 +123,12 @@ la la la
   | ✅ | `1.4.1` | Сумматор. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.4.2` | Сумма цифр числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.4.3` | Таблица умножения для числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.3.0  Операторы ветвления. Логические операции.</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
@@ -113,23 +137,31 @@ la la la
   | ✅ | `1.3.2` | Упорядочить числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.3.3` | Гороскоп. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.3.4` | Сравнить числа. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
 
   <details open>
+  <div align="center">
   <summary><b>📂 1.2.0 Переменные и их типы.</b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.2.1` | Повторите число. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
   | ✅ | `1.2.2` | Повторите слово. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
   
   <details open>
+  <div align="center">
   <summary><b>📂 1.1.0 Знакомство с C++. </b></summary>
   <br>
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.1.1` | Написать первую программу. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+  
+  </div>
   </details>
 </details>
 

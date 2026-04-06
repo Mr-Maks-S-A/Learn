@@ -24,6 +24,26 @@
 
 ---
 
+
+
+
+### 📂 1.8. Область видимости и типы памяти
+<div align="left">
+  <p>
+    <code>1.8.1</code> Задание 1. Считающая функция 
+    <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=gitbook&logoColor=white" height="20"></a>
+  </p>
+  <p>
+    <code>1.8.2</code> Задание 2. Одинаковые, но разные функции 
+    <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=gitbook&logoColor=white" height="20"></a>
+  </p>
+</div>
+
+
+
+
+
+
 # 📊 Прогресс обучения
 
 ### 📂 9. Указатели. Массивы и параметры функций

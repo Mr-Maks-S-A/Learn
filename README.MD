@@ -73,8 +73,27 @@
   </a>
 </div>
 
+4
+<a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
+  <img src="https://img.shields.io/badge/—_ПОСМОТРЕТЬ_РЕШЕНИЕ_—-0075ca?style=for-the-badge&logo=github&logoColor=white" width="100%">
+</a>
 
+5
+<a href="URL_ССЫЛКИ">
+  <img src="https://img.shields.io/badge/ЗАДАНИЕ-1.8.1-282c34?style=for-the-badge&logo=cplusplus">
+  <img src="https://img.shields.io/badge/ОТКРЫТЬ-0075ca?style=for-the-badge&logo=external-link">
+</a>
 
+6
+
+<div align="right">
+  <a href="URL">
+    <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
+  </a>
+  <a href="URL">
+    <img src="https://img.shields.io/badge/Documentation-gray?style=social&logo=read-the-docs" height="25">
+  </a>
+</div>
 
 <details open>
 <summary><b>📂 1.8. Область видимости и пространства имён</b></summary>

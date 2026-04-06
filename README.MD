@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -20,6 +20,8 @@
 > **Примечание:** 
 
 ### 🖥️ Окружение 
+<div align="center">
+
 | Property | Value |
 | :--- | :--- |
 | **OS** | CachyOS x86_64 (Linux 6.19.9) |
@@ -27,6 +29,8 @@
 | **Shell** | fish 4.5.0 |
 | **Terminal** | alacritty 0.16.1 |
 | **CPU** | AMD Ryzen 7 3700X @ 4.43 GHz |
+
+</div>
 
 ### 🚀 Пример работы программы
 
@@ -36,11 +40,20 @@ la la la
 ```
 
 
-### 🖼️ Preview
-![](README_IMG/8.2_Область_видимости_переменных_и_типы_памяти_Пространства_имён-Одинаковые_но_разные_функции.png)
-####  Commands
+#### 🖼️ Preview
+![](README_IMG/)
+
+####  Команды для сборки
 ```bash
-cmake --help
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug 
+```
+
+```bash
+cmake --build build --parallel $(nproc)
+```
+
+```bash
+cmake --build build --target Proj_Name --parallel $(nproc) 
 ```
 
 ---
@@ -51,7 +64,7 @@ cmake --help
 <summary><b>1 Основы программирования на C++</b></summary>
 <br>
 
-  <details>
+  <details open>
     <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
     <br>
     <table width="100%">

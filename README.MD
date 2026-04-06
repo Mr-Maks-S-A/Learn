@@ -46,12 +46,12 @@ cmake --help
 
 
 <details open>
-<summary><b> 1) Основы программирования на C++</b></summary>
+#### 1 Основы программирования на C++</b></summary>
 <br>
 
   <details open>
+##### 📂 1.9.0 Указатели. Массивы и параметры функций
   <div align="center">
-  <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
   <br>
 
   | Статус | ID | Описание задачи | Ссылка |
@@ -65,8 +65,9 @@ cmake --help
 
   <details open>
   <div align="center">
-  <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
+##### 📂 1.8.0 Область видимости и пространства имён
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -79,6 +80,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.7.0 Модель памяти и хранение данных.</b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.7.1` | Адреса переменных | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v7.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -91,6 +93,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия.</b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.6.1` | Арифметические функции. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v6.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -104,6 +107,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.5.0 Массивы.</b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.5.1` | Вывод массива на экран. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v5.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -118,6 +122,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.4.0 Циклические конструкции. </b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.4.1` | Сумматор. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v4.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -131,6 +136,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.3.0  Операторы ветвления. Логические операции.</b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.3.1` | Таблица истинности. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v3.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -145,6 +151,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.2.0 Переменные и их типы.</b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.2.1` | Повторите число. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v2.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
@@ -157,6 +164,7 @@ cmake --help
   <div align="center">
   <summary><b>📂 1.1.0 Знакомство с C++. </b></summary>
   <br>
+  
   | Статус | ID | Описание задачи | Ссылка |
   | :---: | :---: | :--- | :--- |
   | ✅ | `1.1.1` | Написать первую программу. | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.0"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |

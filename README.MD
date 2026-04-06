@@ -19,7 +19,7 @@
 
 > **Примечание:** 
 
-### 🖥️ Окружение (Console Out)
+### 🖥️ Окружение 
 | Property | Value |
 | :--- | :--- |
 | **OS** | CachyOS x86_64 (Linux 6.19.9) |
@@ -48,12 +48,14 @@ cmake --help
 ### 📊 Прогресс обучения
 
 
+
+#### 1 Основы программирования на C++
 <details open>
-#### 1 Основы программирования на C++</b></summary>
 <br>
 
   <details open>
   <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
+  
   <div align="center">
   <br>
 
@@ -67,8 +69,9 @@ cmake --help
   </details>
 
   <details open>
-  <div align="center">
   <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -80,8 +83,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.7.0 Модель памяти и хранение данных.</b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -93,8 +97,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.6.0 Функции и их параметры. Рекурсия.</b></summary>
+
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -107,8 +112,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.5.0 Массивы.</b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -122,8 +128,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.4.0 Циклические конструкции. </b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -136,8 +143,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.3.0  Операторы ветвления. Логические операции.</b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -151,8 +159,9 @@ cmake --help
   </details>
 
   <details open>
-  <div align="center">
   <summary><b>📂 1.2.0 Переменные и их типы.</b></summary>
+
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |
@@ -164,8 +173,9 @@ cmake --help
   </details>
   
   <details open>
-  <div align="center">
   <summary><b>📂 1.1.0 Знакомство с C++. </b></summary>
+  
+  <div align="center">
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |

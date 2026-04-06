@@ -28,18 +28,53 @@
 
 ---
 
-<details>
-<summary><b>📂 1.1. Установка окружения и Hello World</b></summary>
+<details open>
+<summary><b>📂 1.8. Область видимости и пространства имён</b></summary>
 <br>
 
 | Статус | ID | Описание задачи | Ссылка |
 | :---: | :---: | :--- | :--- |
-| - [x] | `1.1.1` | Настройка компилятора и IDE | <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a> |
-| - [x] | `1.1.2` | Первая программа на C++ | <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a> |
-| - [x] | `1.1.3` | Основы синтаксиса и вывод | <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a> |
-| - [x] | `1.1.4` | Работа с комментариями | <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a> |
+| ✅ | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ✅ | `1.8.2` | Одинаковые функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ⏳ | `1.8.3` | Статические переменные | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ⏳ | `1.8.4` | Пространства имен `namespace` | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
 
 </details>
+
+
+1
+<table align="center">
+  <tr>
+    <td bgcolor="#0075ca" align="center" style="padding: 10px 20px; border-radius: 8px;">
+      <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v13.0" style="color: white; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+        <img src="https://img.shields.io/badge/-Запустить_проект-white?style=flat-square&logo=render&logoColor=0075ca" height="20" align="center"> 
+        &nbsp; ОТКРЫТЬ GAME OF LIFE ↗
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+2
+
+<div align="center">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
+    <img src="https://img.shields.io/badge/ПОСМОТРЕТЬ_ИСХОДНЫЙ_КОД-0075ca?style=for-the-badge&logo=github&logoColor=white" height="40">
+  </a>
+</div>
+
+
+
+3
+
+<div align="center">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1">
+    <kbd> <b>Перейти к ветке v8.1</b> </kbd>
+  </a>
+</div>
+
+
+
 
 <details open>
 <summary><b>📂 1.8. Область видимости и пространства имён</b></summary>
@@ -47,12 +82,13 @@
 
 | Статус | ID | Описание задачи | Ссылка |
 | :---: | :---: | :--- | :--- |
-| [x] | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| [x] | `1.8.2` | Одинаковые функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| [ ] | `1.8.3` | Статические переменные | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
-| [ ] | `1.8.4` | Пространства имен `namespace` | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ![](https://img.shields.io/badge/DONE-28a745?style=flat-square) | `1.8.1` | Считающая функция | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ![](https://img.shields.io/badge/DONE-28a745?style=flat-square) | `1.8.2` | Одинаковые функции | <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ![](https://img.shields.io/badge/TODO-6c757d?style=flat-square) | `1.8.3` | Статические переменные | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
+| ![](https://img.shields.io/badge/TODO-6c757d?style=flat-square) | `1.8.4` | Пространства имен `namespace` | <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a> |
 
 </details>
+
 
 ---
 

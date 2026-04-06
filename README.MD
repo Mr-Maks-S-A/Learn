@@ -25,6 +25,73 @@
 ---
 
 
+# 📊 Учебный план: Часть 1 (Основы)
+
+---
+
+<details>
+<summary><b>📂 1.1. Установка окружения и Hello World</b></summary>
+<br>
+
+- [x] `1.1.1` Настройка компилятора и IDE <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.1.2` Первая программа на C++ <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.1.3` Основы синтаксиса и вывод <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.1.4` Работа с комментариями <a href="#"><img src="https://img.shields.io/badge/Ref-6c757d?style=for-the-badge&logo=github" height="20"></a>
+
+</details>
+
+<details>
+<summary><b>📂 1.2. Переменные и типы данных</b></summary>
+<br>
+
+- [x] `1.2.1` Целочисленные типы и `float` <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.2.2` Логический тип `bool` <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.2.3` Константы и `auto` <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.2.4` Приведение типов <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+
+</details>
+
+<details open>
+<summary><b>📂 1.8. Область видимости и пространства имён</b></summary>
+<br>
+
+- [x] `1.8.1` Считающая функция <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a>
+- [x] `1.8.2` Одинаковые функции <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v8.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a>
+- [ ] `1.8.3` Статические переменные <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a>
+- [ ] `1.8.4` Пространства имен `namespace` <a href="#"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a>
+
+</details>
+
+<details>
+<summary><b>📂 1.12. Динамическое выделение памяти</b></summary>
+<br>
+
+- [ ] `1.12.1` Операторы `new` и `delete` <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [ ] `1.12.2` Динамические массивы <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [ ] `1.12.3` Умные указатели (базово) <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+- [ ] `1.12.4` Утечки памяти и их поиск <a href="#"><img src="https://img.shields.io/badge/Ref-17a2b8?style=for-the-badge&logo=github" height="20"></a>
+
+</details>
+
+---
+
+### 🏆 1.13. Финальный Босс: Game of Life
+<div align="left">
+  <p>Объединение всех пройденных тем в один проект.</p>
+  <a href="#"><img src="https://img.shields.io/badge/PROJECT-IN_PROGRESS-ff69b4?style=for-the-badge&logo=render&logoColor=white" height="30"></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 # 📊 Прогресс обучения
 <details open>
 ### 📂 9. Указатели. Массивы и параметры функций

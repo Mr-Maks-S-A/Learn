@@ -7,11 +7,14 @@
   </a>
 </div>
 
+<div align="center">
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
 # 💻 C++ Learning Journey
+</div>
 
 
 > **Примечание:** 
@@ -50,7 +53,7 @@ cmake --help
 <br>
 
   <details open>
-##### 📂 1.9.0 Указатели. Массивы и параметры функций
+  <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
   <div align="center">
   <br>
 
@@ -65,7 +68,7 @@ cmake --help
 
   <details open>
   <div align="center">
-##### 📂 1.8.0 Область видимости и пространства имён
+  <summary><b>📂 1.8.0 Область видимости и пространства имён</b></summary>
   <br>
   
   | Статус | ID | Описание задачи | Ссылка |

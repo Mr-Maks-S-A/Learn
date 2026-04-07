@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.9.2/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.9.3/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,14 +13,16 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Снова swap.
-Реализация функции swap с использованием указателей и шаблонов.<br>
-Включена проверка на нулевые указатели и самообмен.<br>
-Включена проверка на этапе компиляции: можно ли этот тип копировать<br>
+# 💻 Переворот массива.
+Программа реализует разворот массива на месте, используя кастомный шаблонный swap
+и вывод через функцию print.<br>
+
 </div>
 
-> **Примечание:** Снова использованы шаблонные методы мне нравится статичесский полиморфизм <br> ссылка на прошлое решение:<br>
-[![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v7.2)
+> **Примечание:** Статичесский полиморфизм <br> Проверки указателей перед разыменованием. <br> static_assert для контроля свойств типов.<br>
+<div align="center">
+Повторно использовались решения:[![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1) [![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2)
+</div>
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -39,16 +41,13 @@
 
 #### Вывод в консоль
 ```code
-/m/H/!/0/Learn►./build/bin/Worc9_Swap_again                                                                                                                                                                                               
-a = 5, b = 8
-a = 5, b = 8 (исходные имена для примера)
-Результат: a = 8, b = 5
-x = 1.5, y = 9.9 (исходные значения)
-Результат: x = 9.9, y = 1.5
+/m/H/!/0/Learn►./build/bin/Worc9_Array_reversal                                                                                                                                                                                           
+До функции reverse: 1 2 3 4 5 6 7 8 9
+После функции reverse: 9 8 7 6 5 4 3 2 1
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.9.2_Указатели_Массивы_и_параметры_функций-Снова_swap.png)
+![](README_IMG/1.9.3_Указатели_Массивы_и_параметры_функций-Переворот_массива.png)
 
 
 
@@ -172,12 +171,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.9.3</code></td>
                 <td align="left">Переворот массива</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.9.3_Указатели_Массивы_и_параметры_функций-Переворот_массива.png">
+                    <img src="README_IMG/1.9.3_Указатели_Массивы_и_параметры_функций-Переворот_массива.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>

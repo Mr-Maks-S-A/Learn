@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.2/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.3/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,11 +13,12 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Создатель массивов
-Демонстрация функции создания динамического массива с инициализацией нулями.
+# 💻 Динамическая таблица умножения
+Программа создает двумерный массив в куче, заполняет* его значениями<br>
+таблицы умножения и корректно освобождает память.
 </div>
 
-> **Примечание:** Код остался почти нетронутым с предыдущего задания
+> **Примечание:** Реализация двумерного массива в «куче» с использованием каскадного выделения и освобождения памяти. <br>Программа защищена от некорректного ввода через шаблонные функции валидации.
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -36,13 +37,34 @@
 
 #### Вывод в консоль
 ```code
-/m/H/!/0/Learn►./build/bin/Worc10_Array_Creator                                                                                                                                                                                           
-Введите размер массива: 22
-Mассив: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+/m/H/!/0/Learn►./build/bin/Worc10_Dynamic_multiplication_table                                                                                                                                                                            
+Введите количество строк: 3
+Введите количество столбцов: 6
+Таблица умножения:
+   1   2   3   4   5   6
+   2   4   6   8  10  12
+   3   6   9  12  15  18
+```
+
+```code
+/m/H/!/0/Learn►./build/bin/Worc10_Dynamic_multiplication_table                                                                                                                                                                           
+Введите количество строк: 10
+Введите количество столбцов: 10
+Таблица умножения:
+   1   2   3   4   5   6   7   8   9  10
+   2   4   6   8  10  12  14  16  18  20
+   3   6   9  12  15  18  21  24  27  30
+   4   8  12  16  20  24  28  32  36  40
+   5  10  15  20  25  30  35  40  45  50
+   6  12  18  24  30  36  42  48  54  60
+   7  14  21  28  35  42  49  56  63  70
+   8  16  24  32  40  48  56  64  72  80
+   9  18  27  36  45  54  63  72  81  90
+  10  20  30  40  50  60  70  80  90 100
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.10.2_Указатели_Динамическая_память-Создатель_массивов.png)
+![](README_IMG/1.10.3_Указатели_Динамическая_память-Динамическая_таблица_умножения.png)
 
 
 
@@ -108,12 +130,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.10.3</code></td>
                 <td align="left">Динамическая таблица умножения.</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.3/README_IMG/1.10.3_Указатели_Динамическая_память-Динамическая_таблица_умножения.png">
+                    <img src="README_IMG/1.10.3_Указатели_Динамическая_память-Динамическая_таблица_умножения.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>

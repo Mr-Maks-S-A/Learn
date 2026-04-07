@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc9_     VERSION 9.1.0)
+project(Worc9_Array_output     VERSION 9.1.0)
 
 
 set(CMAKE_CXX_STANDARD 20)

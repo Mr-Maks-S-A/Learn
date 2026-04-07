@@ -21,7 +21,9 @@
 
 > **Примечание:** Статичесский полиморфизм <br> Проверки указателей перед разыменованием. <br> static_assert для контроля свойств типов.<br>
 <div align="center">
-Повторно использовались решения:[![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1) [![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2)
+Повторно использовались решения: 
+[![Ref](https://img.shields.io/badge/ref-v1.9.1-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1) <br>
+[![Ref](https://img.shields.io/badge/ref-v1.9.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2) <br>
 </div>
 
 ### 🖥️ Окружение 

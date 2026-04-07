@@ -13,11 +13,13 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 C++ Learning Journey
+# 💻 Вывод массива
+Программа содержит функцию print, которая выводит элементы массива произвольного типа<br>
+и размера на экран, разделяя их пробелами.
+
 </div>
 
-
-> **Примечание:** 
+> **Примечание:** Реализовано через шаблонный метод с ограничениями только на входной арифметичесский тип
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -36,12 +38,16 @@
 
 #### Вывод в консоль
 ```code
-la la la
+/m/H/!/0/Learn►./build/bin/Worc9_Array_output                                                                                                                                                                                             
+1 2 3 4 5 6 7 8 9
+6.5 5.2 4 8.8
+1 4 3 7 5
 ```
 
-
 #### 🖼️ Preview
-![](README_IMG/)
+![](README_IMG/1.9.1_Указатели_Массивы_и_параметры_функций-Вывод-массива.png)
+
+
 
 ####  Команды для сборки
 ```bash
@@ -64,6 +70,64 @@ cmake --build build --target Proj_Name --parallel $(nproc)
 <summary><b>1 Основы программирования на C++</b></summary>
 <br>
 
+ <details>
+    <summary><b>📂 1.10.0 Указатели. Динамическая память</b></summary>
+    <br>
+    <table width="100%">
+      <tr>
+        <td width="20%" style="border: none;"></td>
+        <td style="border: none;">
+          <table width="100%">
+            <thead>
+              <tr align="center">
+                <th width="10%">Статус</th>
+                <th width="10%">ID</th>
+                <th>Описание задачи</th>
+                <th width="20%">Preview</th>
+                <th width="15%">Ссылка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="center">
+                <td>⏳</td>
+                <td><code>1.10.1</code></td>
+                <td align="left">Ввод массива с консоли</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+              <tr align="center">
+                <td>⏳</td>
+                <td><code>1.10.2</code></td>
+                <td align="left">Создатель массивов.</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+              <tr align="center">
+                <td>⏳</td>
+                <td><code>1.10.3</code></td>
+                <td align="left">Динамическая таблица умножения.</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
+                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </details>
+
   <details open>
     <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
     <br>
@@ -83,12 +147,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
             </thead>
             <tbody>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.9.1</code></td>
                 <td align="left">Вывод массива</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.9.1_Указатели_Массивы_и_параметры_функций-Вывод-массива.png">
+                    <img src="README_IMG/1.9.1_Указатели_Массивы_и_параметры_функций-Вывод-массива.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>

@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.9.1/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.9.2/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,13 +13,14 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Вывод массива
-Программа содержит функцию print, которая выводит элементы массива произвольного типа<br>
-и размера на экран, разделяя их пробелами.
-
+# 💻 Снова swap.
+Реализация функции swap с использованием указателей и шаблонов.<br>
+Включена проверка на нулевые указатели и самообмен.
+Включена проверка на этапе компиляции: можно ли этот тип копировать
 </div>
 
-> **Примечание:** Реализовано через шаблонный метод с ограничениями только на входной арифметичесский тип
+> **Примечание:** Снова использованы шаблонные методы мне нравится статичесский полиморфизм <br> ссылка на прошлое решение:<br>
+[![Ref](https://img.shields.io/badge/ref-v7.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v7.2)
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -38,14 +39,16 @@
 
 #### Вывод в консоль
 ```code
-/m/H/!/0/Learn►./build/bin/Worc9_Array_output                                                                                                                                                                                             
-1 2 3 4 5 6 7 8 9
-6.5 5.2 4 8.8
-1 4 3 7 5
+/m/H/!/0/Learn►./build/bin/Worc9_Swap_again                                                                                                                                                                                               
+a = 5, b = 8
+a = 5, b = 8 (исходные имена для примера)
+Результат: a = 8, b = 5
+x = 1.5, y = 9.9 (исходные значения)
+Результат: x = 9.9, y = 1.5
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.9.1_Указатели_Массивы_и_параметры_функций-Вывод-массива.png)
+![](README_IMG/1.9.2_Указатели_Массивы_и_параметры_функций-Снова_swap.png)
 
 
 
@@ -158,12 +161,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.9.2</code></td>
                 <td align="left">Снова swap</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.9.2_Указатели_Массивы_и_параметры_функций-Снова_swap.png">
+                    <img src="README_IMG/1.9.2_Указатели_Массивы_и_параметры_функций-Снова_swap.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>

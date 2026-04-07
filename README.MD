@@ -78,7 +78,7 @@ cmake --build build --target Proj_Name --parallel $(nproc)
 <summary><b>1 Основы программирования на C++</b></summary>
 <br>
 
- <details>
+ <details open>
     <summary><b>📂 1.10.0 Указатели. Динамическая память</b></summary>
     <br>
     <table width="100%">

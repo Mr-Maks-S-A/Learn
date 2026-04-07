@@ -20,11 +20,10 @@
 </div>
 
 > **Примечание:** Статичесский полиморфизм <br> Проверки указателей перед разыменованием. <br> static_assert для контроля свойств типов.<br>
-<div align="center">
-Повторно использовались решения: 
+Повторно использовались решения:<br> 
 [![Ref](https://img.shields.io/badge/ref-v1.9.1-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1) <br>
 [![Ref](https://img.shields.io/badge/ref-v1.9.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2) <br>
-</div>
+
 
 ### 🖥️ Окружение 
 <div align="center">

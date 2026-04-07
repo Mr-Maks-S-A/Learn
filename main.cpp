@@ -1,8 +1,8 @@
 /**
- * @mainpage Программа "Переворот массива"
+ * @mainpage Программа "Ввод массива с консоли"
  * @section desc Описание
- * Программа реализует разворот массива на месте, используя кастомный шаблонный swap
- * и вывод через функцию print.
+ * Программа позволяет пользователю задать размер массива и заполнить его
+ * значениями с консоли. Используется динамическое выделение памяти.
  *
  * @author Салакатов Максим Альбертович aka (Jarko || Mr-Maks-S-A)
  */
@@ -12,6 +12,41 @@
 #include <clocale>  // Библиотека для работы с локалью (setlocale)
 #include <type_traits> // Необходимо для is_copy_assignable_v/is_copy_constructible_v
 #include <concepts> // Для std::derived_from, std::integral и т.д.
+#include <limits> // Обязательно для std::numeric_limits
+
+
+/**
+ * @brief Универсальная функция безопасного ввода числа с консоли.
+ * @tparam T Тип вводимого значения (должен быть арифметическим).
+ * @param prompt Сообщение для пользователя.
+ * @param min_val Минимально допустимое значение.
+ * @return Считанное и проверенное значение.
+ */
+template <typename T>
+requires std::is_arithmetic_v<T>
+T get_input(const std::string& prompt, T min_val = std::numeric_limits<T>::lowest()) {
+    T value;
+    while (true) {
+        std::cout << prompt;
+        std::cin >> value;
+
+        if (std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Ошибка: введите корректное число.\n";
+            continue;
+        }
+
+        if (value < min_val) {
+            std::cout << "Ошибка: значение должно быть не меньше " << min_val << ".\n";
+            continue;
+        }
+
+        // Очищаем буфер от лишних символов после ввода числа (на случай ввода "10 abc")
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        return value;
+    }
+}
 
 
 
@@ -34,55 +69,15 @@ void print(const T* arr, size_t size) {
     std::cout << std::endl;
 }
 
-/**
- * @brief Обменивает значения двух переменных через указатели.
- * @tparam T Тип обмениваемых значений.
- * @param a Указатель на первую переменную.
- * @param b Указатель на вторую переменную.
- */
-template <typename T>
-void swap(T* a, T* b) {
-    // Проверка на этапе компиляции: можно ли этот тип копировать?
-    // Если нет — код даже не соберется, выдав понятную ошибку.
-    static_assert(std::is_copy_assignable_v<T>, "Тип T должен поддерживать оператор присваивания!");
-    static_assert(std::is_copy_constructible_v<T>, "Тип T должен иметь конструктор копирования!");
 
-    // Ранний выход, если указатели невалидны или указывают на одно место
-    if (!a || !b || a == b) return;
-
-    // 3. Классический обмен через разыменование
-    T temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-
-
-/**
- * @brief Переворачивает массив, меняя порядок элементов на обратный.
- * @param arr  Указатель на массив (изменяется внутри функции).
- * @param size Размер массива.
- * @note Если передан NULL или размер < 2, функция не выполняет никаких действий.
- * @note Требует, чтобы тип T поддерживал копирование и присваивание.
- */
-template <typename T>
-void reverse(T* arr, size_t size) {
-
-    if (!arr || size < 2) return;
-
-    for (size_t i = 0; i < size / 2; ++i) {
-        // Вызываем swap, передавая адреса элементов
-        swap(&arr[i], &arr[size - 1 - i]);
-    }
-}
 
 /**
  * @brief Точка входа в программу.
  * * @details Процесс работы:
- * 1. Инициализация локали и масиива
- * 2. вывод масиива до разворота
- * 3. разворот
- * 4. вывод масиива после разворота
+ * 1. Ожидаем ввод пользователя
+ * 2. Инициализируем масив
+ * 3. Заполняем масив
+ * 4. Выводим заполненный масив
  *
  * @return int Статус завершения программы (EXIT_SUCCESS в случае успеха).
  */
@@ -92,17 +87,26 @@ int main() {
     std::setlocale(LC_ALL, "Russian");
     #endif
 
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    //C++17 сохраняю чтобы не первычислять хотя компилятор скорей всего и без меня так же бы сделал
-    const size_t size = std::size(arr);
+    // 1. Получаем размер массива (минимум 1)
+    int size = get_input<int>("Введите размер массива: ", 1);
 
-    std::cout << "До функции reverse: ";
-    print(arr, size);
+    // 2. Выделяем память под динамический массив
+    int* arr = new int[size];
 
-    reverse(arr, size);
+    // 3. Заполняем массив, используя ту же функцию get_input
+    for (int i = 0; i < size; ++i) {
+        std::string prompt = "arr[" + std::to_string(i) + "] = ";
+        arr[i] = get_input<int>(prompt);
+    }
 
-    std::cout << "После функции reverse: ";
-    print(arr, size);
+    // 4. Вывод результата (используем нашу наработку)
+    std::cout << "Введённый массив: ";
+    print(arr, static_cast<size_t>(size));
+
+    // 5. Обязательная очистка памяти
+    delete[] arr;
+    arr = nullptr; // Хорошая практика: зануляем указатель после удаления
+
 
     return EXIT_SUCCESS;
 }

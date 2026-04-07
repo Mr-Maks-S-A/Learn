@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.1/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.2/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,13 +13,11 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Ввод массива с консоли
-Программа позволяет пользователю задать размер массива и заполнить его
-значениями с консоли. Используется динамическое выделение памяти.
-
+# 💻 Создатель массивов
+Демонстрация функции создания динамического массива с инициализацией нулями.
 </div>
 
-> **Примечание:** Реализована функция для проверки корректности ввода арифметичесского числа
+> **Примечание:** Код остался почти нетронутым с предыдущего задания
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -38,22 +36,13 @@
 
 #### Вывод в консоль
 ```code
-/m/H/!/0/Learn►./build/bin/Worc10_Entering_an_array_from_the_console                                                                                                                                                                      
-Введите размер массива: 5
-arr[0] = d
-Ошибка: введите корректное число.
-arr[0] = s
-Ошибка: введите корректное число.
-arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-Введённый массив: 1 2 3 4 5
+/m/H/!/0/Learn►./build/bin/Worc10_Array_Creator                                                                                                                                                                                           
+Введите размер массива: 22
+Mассив: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.10.1_Указатели_Динамическая_память-Ввод_массива_с_консоли.png)
+![](README_IMG/1.10.2_Указатели_Динамическая_память-Создатель_массивов.png)
 
 
 
@@ -108,12 +97,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.10.2</code></td>
                 <td align="left">Создатель массивов.</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.10.2_Указатели_Динамическая_память-Создатель_массивов.png">
+                    <img src="README_IMG/1.10.2_Указатели_Динамическая_память-Создатель_массивов.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>

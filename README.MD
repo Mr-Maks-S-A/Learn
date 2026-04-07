@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.9.3/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.1/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,17 +13,13 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Переворот массива.
-Программа реализует разворот массива на месте, используя кастомный шаблонный swap
-и вывод через функцию print.<br>
+# 💻 Ввод массива с консоли
+Программа позволяет пользователю задать размер массива и заполнить его
+значениями с консоли. Используется динамическое выделение памяти.
 
 </div>
 
-> **Примечание:** Статичесский полиморфизм <br> Проверки указателей перед разыменованием. <br> static_assert для контроля свойств типов.<br>
-Повторно использовались решения:<br> 
-[![Ref](https://img.shields.io/badge/ref-v1.9.1-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.1) <br>
-[![Ref](https://img.shields.io/badge/ref-v1.9.2-blue?style=flat-square&logo=github)](https://github.com/Mr-Maks-S-A/Learn/tree/v1.9.2) <br>
-
+> **Примечание:** Реализована функция для проверки корректности ввода арифметичесского числа
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -42,13 +38,22 @@
 
 #### Вывод в консоль
 ```code
-/m/H/!/0/Learn►./build/bin/Worc9_Array_reversal                                                                                                                                                                                           
-До функции reverse: 1 2 3 4 5 6 7 8 9
-После функции reverse: 9 8 7 6 5 4 3 2 1
+/m/H/!/0/Learn►./build/bin/Worc10_Entering_an_array_from_the_console                                                                                                                                                                      
+Введите размер массива: 5
+arr[0] = d
+Ошибка: введите корректное число.
+arr[0] = s
+Ошибка: введите корректное число.
+arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+arr[3] = 4
+arr[4] = 5
+Введённый массив: 1 2 3 4 5
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.9.3_Указатели_Массивы_и_параметры_функций-Переворот_массива.png)
+![](README_IMG/1.10.1_Указатели_Динамическая_память-Ввод_массива_с_консоли.png)
 
 
 
@@ -92,12 +97,12 @@ cmake --build build --target Proj_Name --parallel $(nproc)
             </thead>
             <tbody>
               <tr align="center">
-                <td>⏳</td>
+                <td>✅</td>
                 <td><code>1.10.1</code></td>
                 <td align="left">Ввод массива с консоли</td>
                 <td>
-                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/">
-                    <img src="README_IMG/" height="40" alt="NO_IMG">
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.10.1_Указатели_Динамическая_память-Ввод_массива_с_консоли.png">
+                    <img src="README_IMG/1.10.1_Указатели_Динамическая_память-Ввод_массива_с_консоли.png" height="40" alt="NO_IMG">
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.10.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
@@ -131,7 +136,7 @@ cmake --build build --target Proj_Name --parallel $(nproc)
     </table>
   </details>
 
-  <details open>
+  <details>
     <summary><b>📂 1.9.0 Указатели. Массивы и параметры функций</b></summary>
     <br>
     <table width="100%">

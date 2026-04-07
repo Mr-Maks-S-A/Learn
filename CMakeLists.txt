@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc10_Array_Creator    VERSION 10.2.0)
+project(Worc10_Dynamic_multiplication_table    VERSION 10.3.0)
 
 
 set(CMAKE_CXX_STANDARD 20)

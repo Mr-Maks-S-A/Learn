@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc11_Greetings   VERSION 11.1.0)
+project(Worc11_Guessing_game   VERSION 11.2.0)
 
 
 set(CMAKE_CXX_STANDARD 20)

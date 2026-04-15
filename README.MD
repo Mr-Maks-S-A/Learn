@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.3/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.4/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,9 +13,9 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Пользовательский массив в файл
-Программа запрашивает у пользователя данные, формирует динамический массив<br>
-и сохраняет его в файл out.txt в обратном порядке.
+# 💻 Считывание двумерного массива из файла
+Программа считывает размеры и содержимое двумерного массива из файла in.txt,<br>
+после чего выводит его в консоль, разворачивая каждую строку задом наперед.
 </div>
 
 > **Примечание:**
@@ -38,41 +38,43 @@
 #### Вывод в консоль
 
 ```bash
-/m/H/!/0/L/b/bin►./Worc12_Custom_array_to_file                                                                                                                                                                                                   
-Введите размер массива: A
-Ошибка: введите корректное число.
-Введите размер массива: 5
-arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-Файл успешно 
-/m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                                     
-5
-5 4 3 2 1
+/m/H/!/0/Learn►cat build/bin/in.txt                                                                                                                                                                                                              
+5 5
+1 2 3 4 5
+6 7 8 9 10
+11 12 13 14 15
+16 17 18 19 20
+21 22 23 24 25
+/m/H/!/0/Learn►cd build/bin/                                                                                                                                                                                                                     
+/m/H/!/0/L/b/bin►./Worc12_Reading_a_two-dimensional_array_from_a_file                                                                                                                                                                            
+Результат обработки матрицы:
+
+5    4    3    2    1
+10   9    8    7    6
+15   14   13   12   11
+20   19   18   17   16
+25   24   23   22   21
 ```
 
 ```bash
-m/H/!/0/L/b/bin►./Worc12_Custom_array_to_file                                                                                                                                                                                                   
-Введите размер массива: 7
-arr[0] = A
-Ошибка: введите корректное число.
-arr[0] = 1
-arr[1] = 2
-arr[2] = 3
-arr[3] = 4
-arr[4] = 5
-arr[5] = 6
-arr[6] = 7
-Файл успешно сохранен.
-/m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                             
-7
-7 6 5 4 3 2 1
+/m/H/!/0/L/b/bin►bash -c 'cat <<EOF > in.txt                                                                                                                                                                                                     
+                 2 3
+                 1 2 3
+                 4 5 6
+                 EOF'
+/m/H/!/0/L/b/bin►cat in.txt                                                                                                                                                                                                                      
+2 3
+1 2 3
+4 5 6
+/m/H/!/0/L/b/bin►./Worc12_Reading_a_two-dimensional_array_from_a_file                                                                                                                                                                            
+Результат обработки матрицы:
+
+3    2    1
+6    5    4
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.12.3_Custom_array_to_file.png)
+![](README_IMG/README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png)
 
 
 
@@ -91,6 +93,14 @@ ls -la build/bin/
 
 ```bash
 cat build/bin/in.txt 
+```
+
+```bash
+bash -c 'cat <<EOF > in.txt                                                                                                                                                                                                     
+                 2 3
+                 1 2 3
+                 4 5 6
+                 EOF'
 ```
 
 ```bash

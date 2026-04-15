@@ -1,8 +1,8 @@
 /**
- * @mainpage Программа "Пользовательский массив в файл"
+ * @mainpage Программа "Считывание двумерного массива из файла"
  * @section desc Описание
- * Программа запрашивает у пользователя данные, формирует динамический массив
- * и сохраняет его в файл out.txt в обратном порядке.
+ * Программа считывает размеры и содержимое двумерного массива из файла in.txt,
+ * после чего выводит его в консоль, разворачивая каждую строку задом наперед.
  *
  * @author Салакатов Максим Альбертович aka (Jarko || Mr-Maks-S-A)
  */
@@ -12,48 +12,35 @@
 #include <string>   // Для работы со строками
 #include <clocale>  // Библиотека для работы с локалью
 #include <cstdlib>  // Для макросов EXIT_SUCCESS
-#include <limits>
-#include <concepts> // Для std::is_arithmetic_v в концептах
-
+#include <algorithm>// Для std::reverse
+#include <iomanip>  // Для std::cout << std::left << std::setw(width) << arr[i];
 
 
 /**
- * @brief Универсальная функция безопасного ввода числа с консоли.
- * @note из старого кода : https://github.com/Mr-Maks-S-A/Learn/blob/v1.10.1/main.cpp
+ * @brief Выводит элементы массива на экран с выравниванием.
+ * @tparam T Тип элементов.
+ * @param arr Указатель на массив.
+ * @param size Размер массива.
+ * @param width Ширина колонки (по умолчанию 5).
  */
 template <typename T>
-requires std::is_arithmetic_v<T>
-T get_input(const std::string& prompt, T min_val = std::numeric_limits<T>::lowest()) {
-    T value;
-    while (true) {
-        std::cout << prompt;
-        if (!(std::cin >> value)) {
-            std::cin.clear();
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Ошибка: введите корректное число.\n";
-            continue;
-        }
+void print(const T* arr, size_t size, int width = 5) {
+    if (!arr) return;
 
-        if (value < min_val) {
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            std::cout << "Ошибка: значение должно быть не меньше " << min_val << ".\n";
-            continue;
-        }
-
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        return value;
+    for (size_t i = 0; i < size; ++i) {
+        // std::left выравнивает по левому краю, std::setw задает ширину
+        std::cout << std::left << std::setw(width) << arr[i];
     }
+    std::cout << std::endl;
 }
+
 
 
 
 /**
  * @brief Точка входа в программу.
  * * @details Процесс работы:
- * 1. Ввод данных масиива  (размер и ячейки)
- * 2. открытие файла
- * 3. запись в файл
- * 4. закрытие файла
+ * 1.
  *
  * @return int Статус завершения программы (EXIT_SUCCESS в случае успеха).
  */
@@ -62,37 +49,61 @@ int main() {
     // Устанавливаем локаль для корректного вывода кириллицы в консоль
     std::setlocale(LC_ALL, "Russian");
 
-
-    // Используем шаблон для получения размера (минимум 1 элемент)
-    int size = get_input<int>("Введите размер массива: ", 1);
-
-    int* arr = new int[size];
-
-    // Заполнение
-    for (int i = 0; i < size; ++i) {
-        std::string p = "arr[" + std::to_string(i) + "] = ";
-        arr[i] = get_input<int>(p);
-    }
-
-    std::ofstream file("out.txt");
+    std::ifstream file("in.txt");
     if (!file.is_open()) {
-        std::cerr << "Ошибка записи!" << std::endl;
-        delete[] arr;
-        arr = nullptr;
+        std::cerr << "Ошибка: файл in.txt не найден!" << std::endl;
         return EXIT_FAILURE;
     }
 
-    file << size << "\n";
-    for (int i = size - 1; i >= 0; --i) {
-        file << arr[i] << (i == 0 ? "" : " ");
+    int rows = 0, cols = 0;
+    if (!(file >> rows >> cols) || rows <= 0 || cols <= 0) {
+        std::cerr << "Ошибка в структуре файла." << std::endl;
+        return EXIT_FAILURE;
     }
-    file << std::endl;
+
+    // Выделение памяти
+    int** matrix = new int*[rows];
+    for (int i = 0; i < rows; ++i) {
+        matrix[i] = new int[cols];
+    }
+
+    // Чтение
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            file >> matrix[i][j];
+        }
+    }
+
+    // Вывод с выравниванием и реверсом
+    std::cout << "Результат обработки матрицы:\n" << std::endl;
+    for (int i = 0; i < rows; ++i) {
+        std::reverse(matrix[i], matrix[i] + cols);
+        print(matrix[i], static_cast<size_t>(cols));
+    }
+
+    //альтернативный вариант
+    //for (int i = 0; i < rows; ++i) {
+    // Итерируемся по столбцам в обратном порядке:
+    // Начинаем с последнего индекса (cols - 1) и идем до 0 включительно.
+    // for (int j = cols - 1; j >= 0; --j) {
+    //    //std::setw(6) задает фиксированную ширину колонки,
+    //    //чтобы числа не "слипались" и таблица была ровной.
+    //    std::cout << std::left << std::setw(6) << matrix[i][j];
+    // }
+    //    //Переход на новую строку после вывода всех столбцов текущей строки
+    //    std::cout << "\n";
+    // }
+
+    // Очистка
+    for (int i = 0; i < rows; ++i) {
+        delete[] matrix[i];
+    }
+    delete[] matrix;
+    matrix = nullptr;
 
     file.close();
-    delete[] arr;
-    arr = nullptr;
 
-    std::cout << "Файл успешно сохранен." << std::endl;
+    file.close();
 
 
      return EXIT_SUCCESS;

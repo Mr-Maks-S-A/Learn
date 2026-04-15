@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.11.2/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.1/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,11 +13,11 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Угадайка
-Игра, в которой нужно угадать слово. При ошибке выводятся подсказки
+# 💻 Работа с файлами
+Программа открывает файл in.txt и выводит каждое слово с новой строки.
 </div>
 
-> **Примечание:** Дополнительно реализован максимально реалистичный рандомизатор основанный на энтропии, тиках времени, и приведении рандомного адреса со стека.
+> **Примечание:** 
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -35,68 +35,13 @@
 ### 🚀 Пример работы программы
 
 #### Вывод в консоль
-```bash
-/m/H/!/0/Learn►./build/bin/Worc11_Guessing_game                                                                                                                                                                                           
-Добро пожаловать в игру Угадайка!
-Я загадал слово, попробуй его отгадать.
-Введите слово: малина
-Мимо.
-
---- [ АНАЛИЗ ПОПЫТКИ ] ---
-- Загаданное слово длиннее.
-- Совпадений по позициям: 0
-- Текущий прогресс: * * * * * * *
---------------------------
-
-Введите слово: ноут
-Мимо.
-
---- [ АНАЛИЗ ПОПЫТКИ ] ---
-- Загаданное слово длиннее.
-- Совпадений по позициям: 1
-- Текущий прогресс: * * * т * * *
---------------------------
-
-Введите слово: ноутбук
-Мимо.
-
---- [ АНАЛИЗ ПОПЫТКИ ] ---
-- Совпадений по позициям: 1
-- Текущий прогресс: * * * т * * *
---------------------------
-
-Введите слово: система
-Победа! Это было слово: система
-```
 
 ```bash
-/m/H/!/0/Learn►./build/bin/Worc11_Guessing_game                                                          
-Добро пожаловать в игру Угадайка!
-Я загадал слово, попробуй его отгадать.
-Введите слово: система
-Мимо.
 
---- [ АНАЛИЗ ПОПЫТКИ ] ---
-- Загаданное слово длиннее.
-- Совпадений по позициям: 0
-- Текущий прогресс: * * * * * * * *
---------------------------
-
-Введите слово: программист
-Мимо.
-
---- [ АНАЛИЗ ПОПЫТКИ ] ---
-- Загаданное слово короче.
-- Совпадений по позициям: 2
-- Текущий прогресс: * * * * р * * м
---------------------------
-
-Введите слово: алгоритм
-Победа! Это было слово: алгоритм
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.11.2_Guessing_game.png)
+![](README_IMG/1.12.1_File_output.png)
 
 
 
@@ -122,6 +67,43 @@ cmake --build build --target Proj_Name --parallel $(nproc)
 <br>
 
 <details open>
+    <summary><b>📂 1.12.0 Работа с файлами </b></summary>
+    <br>
+    <table width="100%">
+      <tr>
+        <td width="20%" style="border: none;"></td>
+        <td style="border: none;">
+          <table width="100%">
+            <thead>
+              <tr align="center">
+                <th width="10%">Статус</th>
+                <th width="10%">ID</th>
+                <th>Описание задачи</th>
+                <th width="20%">Preview</th>
+                <th width="15%">Ссылка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr align="center">
+                <td>✅</td>
+                <td><code>1.12.1</code></td>
+                <td align="left">Вывод файла.</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.12.1_File_output.png">
+                    <img src="README_IMG/1.12.1_File_output.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.12.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </details>
+
+
+<details>
     <summary><b>📂 1.11.0 «Строки» </b></summary>
     <br>
     <table width="100%">

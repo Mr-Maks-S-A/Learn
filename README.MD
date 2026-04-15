@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.1/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.2/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,11 +13,13 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Работа с файлами
-Программа открывает файл in.txt и выводит каждое слово с новой строки.
+# 💻 Чтение массива из файла
+Программа считывает размер массива и его элементы из файла in.txt,<br>
+после чего выводит элементы в консоль в обратном порядке.
+
 </div>
 
-> **Примечание:**В Cmake добавлено копирование в исполняемую диреторию ресурсов из Sorce
+> **Примечание:**
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -37,19 +39,12 @@
 #### Вывод в консоль
 
 ```bash
-/m/H/!/0/L/b/bin►./Worc12_File_output                                                                                                                                                                                                               
-Картошка
-капуста
-Малина
-клубника
-черешня
-Яблоко
-груша
-апельсин
+/m/H/!/0/L/b/bin►./Worc12_Reading_an_array_from_a_file                                                                                                                                                                                           
+5 4 3 2 1
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.12.1_File_output.png)
+![](README_IMG/1.12.2_Reading_an_array_from_a_file.png)
 
 
 

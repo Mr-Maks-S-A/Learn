@@ -17,7 +17,7 @@
 Программа открывает файл in.txt и выводит каждое слово с новой строки.
 </div>
 
-> **Примечание:** 
+> **Примечание:**В Cmake добавлено копирование в исполняемую диреторию ресурсов из Sorce
 
 ### 🖥️ Окружение 
 <div align="center">
@@ -37,7 +37,15 @@
 #### Вывод в консоль
 
 ```bash
-
+/m/H/!/0/L/b/bin►./Worc12_File_output                                                                                                                                                                                                               
+Картошка
+капуста
+Малина
+клубника
+черешня
+Яблоко
+груша
+апельсин
 ```
 
 #### 🖼️ Preview
@@ -52,6 +60,14 @@ cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Debug
 
 ```bash
 cmake --build build --parallel $(nproc)
+```
+
+```bash
+ls -la build/bin/  
+```
+
+```bash
+cat build/bin/in.txt 
 ```
 
 ```bash
@@ -94,6 +110,39 @@ cmake --build build --target Proj_Name --parallel $(nproc)
                   </a>
                 </td>
                 <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.12.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+              <tr align="center">
+                <td>✅</td>
+                <td><code>1.12.2</code></td>
+                <td align="left">Чтение массива из файла</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.12.2_Reading_an_array_from_a_file.png">
+                    <img src="README_IMG/1.12.2_Reading_an_array_from_a_file.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.12.2"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+              <tr align="center">
+                <td>✅</td>
+                <td><code>1.12.3</code></td>
+                <td align="left">Пользовательский массив в файл</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.12.3_Custom_array_to_file.png">
+                    <img src="README_IMG/1.12.3_Custom_array_to_file.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.12.3"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+              </tr>
+              <tr align="center">
+                <td>✅</td>
+                <td><code>1.12.4</code></td>
+                <td align="left">Считывание двумерного массива из файла</td>
+                <td>
+                  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png">
+                    <img src="README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png" height="40" alt="NO_IMG">
+                  </a>
+                </td>
+                <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.12.4"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
               </tr>
             </tbody>
           </table>

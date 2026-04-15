@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.2/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.3/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,10 +13,9 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Чтение массива из файла
-Программа считывает размер массива и его элементы из файла in.txt,<br>
-после чего выводит элементы в консоль в обратном порядке.
-
+# 💻 Пользовательский массив в файл
+Программа запрашивает у пользователя данные, формирует динамический массив<br>
+и сохраняет его в файл out.txt в обратном порядке.
 </div>
 
 > **Примечание:**
@@ -39,12 +38,40 @@
 #### Вывод в консоль
 
 ```bash
-/m/H/!/0/L/b/bin►./Worc12_Reading_an_array_from_a_file                                                                                                                                                                                           
+/m/H/!/0/L/b/bin►./Worc12_Custom_array_to_file                                                                                                                                                                                                   
+Введите размер массива: A
+Ошибка: введите корректное число.
+Введите размер массива: 5
+arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+arr[3] = 4
+arr[4] = 5
+Файл успешно /m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                                     
+5
 5 4 3 2 1
 ```
 
+```bash
+m/H/!/0/L/b/bin►./Worc12_Custom_array_to_file                                                                                                                                                                                                   
+Введите размер массива: 7
+arr[0] = A
+Ошибка: введите корректное число.
+arr[0] = 1
+arr[1] = 2
+arr[2] = 3
+arr[3] = 4
+arr[4] = 5
+arr[5] = 6
+arr[6] = 7
+Файл успешно сохранен.
+/m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                             
+7
+7 6 5 4 3 2 1
+```
+
 #### 🖼️ Preview
-![](README_IMG/1.12.2_Reading_an_array_from_a_file.png)
+![](README_IMG/1.12.3_Custom_array_to_file.png)
 
 
 

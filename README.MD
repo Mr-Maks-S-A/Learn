@@ -47,7 +47,8 @@ arr[1] = 2
 arr[2] = 3
 arr[3] = 4
 arr[4] = 5
-Файл успешно /m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                                     
+Файл успешно 
+/m/H/!/0/L/b/bin►cat out.txt                                                                                                                                                                                                                     
 5
 5 4 3 2 1
 ```

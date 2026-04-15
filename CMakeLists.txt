@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc12_File_output          VERSION 12.1.0)
+project(Worc12_Reading_an_array_from_a_file          VERSION 12.2.0)
 
 
 set(CMAKE_CXX_STANDARD 20)

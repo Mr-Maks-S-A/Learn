@@ -74,7 +74,7 @@
 ```
 
 #### 🖼️ Preview
-![](README_IMG/README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png)
+![](README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png)
 
 
 

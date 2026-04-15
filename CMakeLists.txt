@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.0 FATAL_ERROR)
-project(Worc11_Guessing_game   VERSION 11.2.0)
+project(Worc12_File_output          VERSION 12.1.0)
 
 
 set(CMAKE_CXX_STANDARD 20)
@@ -20,3 +20,10 @@ add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
 
 # Указать директории для поиска заголовочных файлов
 # target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include" )
+
+# Копирование файла при каждой сборке (на случай изменений в исходнике)
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_CURRENT_SOURCE_DIR}/Sorce/in.txt"
+    "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/in.txt"
+)

@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.12.4/main.cpp">
+  <a href="https://github.com/Mr-Maks-S-A/Learn/blob/v1.13.1/Src/code/main.cpp">
     <img src="https://img.shields.io/badge/Source_Code-blue?style=social&logo=github" height="25">
   </a>
   <a href="#">
@@ -13,9 +13,7 @@
 ![C++](https://img.shields.io/badge/C++-20-blue.svg)
 ![CMake](https://img.shields.io/badge/CMake-4.0+-brightgreen.svg)
 
-# 💻 Считывание двумерного массива из файла
-Программа считывает размеры и содержимое двумерного массива из файла in.txt,<br>
-после чего выводит его в консоль, разворачивая каждую строку задом наперед.
+# 💻 Game of Life
 </div>
 
 > **Примечание:**
@@ -38,43 +36,11 @@
 #### Вывод в консоль
 
 ```bash
-/m/H/!/0/Learn►cat build/bin/in.txt                                                                                                                                                                                                              
-5 5
-1 2 3 4 5
-6 7 8 9 10
-11 12 13 14 15
-16 17 18 19 20
-21 22 23 24 25
-/m/H/!/0/Learn►cd build/bin/                                                                                                                                                                                                                     
-/m/H/!/0/L/b/bin►./Worc12_Reading_a_two-dimensional_array_from_a_file                                                                                                                                                                            
-Результат обработки матрицы:
 
-5    4    3    2    1
-10   9    8    7    6
-15   14   13   12   11
-20   19   18   17   16
-25   24   23   22   21
-```
-
-```bash
-/m/H/!/0/L/b/bin►bash -c 'cat <<EOF > in.txt                                                                                                                                                                                                     
-                 2 3
-                 1 2 3
-                 4 5 6
-                 EOF'
-/m/H/!/0/L/b/bin►cat in.txt                                                                                                                                                                                                                      
-2 3
-1 2 3
-4 5 6
-/m/H/!/0/L/b/bin►./Worc12_Reading_a_two-dimensional_array_from_a_file                                                                                                                                                                            
-Результат обработки матрицы:
-
-3    2    1
-6    5    4
 ```
 
 #### 🖼️ Preview
-![](README_IMG/1.12.4_Reading_a_two-dimensional_array_from_a_file.png)
+![](README_IMG/1.13.1_Game_of_Life.png)
 
 
 
@@ -88,22 +54,6 @@ cmake --build build --parallel $(nproc)
 ```
 
 ```bash
-ls -la build/bin/  
-```
-
-```bash
-cat build/bin/in.txt 
-```
-
-```bash
-bash -c 'cat <<EOF > in.txt                                                                                                                                                                                                     
-                 2 3
-                 1 2 3
-                 4 5 6
-                 EOF'
-```
-
-```bash
 cmake --build build --target Proj_Name --parallel $(nproc) 
 ```
 
@@ -114,8 +64,43 @@ cmake --build build --target Proj_Name --parallel $(nproc)
 <details open>
 <summary><b>1 Основы программирования на C++</b></summary>
 <br>
+  <details open>
+    <summary><b>📂 1.13.0 Игра Жизнь</b></summary>
+    <br>
+    <table width="100%">
+      <tr>
+        <td width="20%" style="border: none;"></td>
+        <td style="border: none;">
+          <table width="100%">
+            <thead>
+              <tr align="center">
+                <th width="10%">Статус</th>
+                <th width="10%">ID</th>
+                <th>Описание задачи</th>
+                <th width="20%">Preview</th>
+                <th width="15%">Ссылка</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                  <td>✅</td>
+                  <td><code>1.13.1</code></td>
+                  <td align="left">Базовая двумерная версия</td>
+                  <td>
+                    <a href="https://github.com/Mr-Maks-S-A/Learn/blob/main/README_IMG/1.13.1_Game_of_Life.png">
+                      <img src="README_IMG/1.13.1_Game_of_Life.png" height="40" alt="NO_IMG">
+                    </a>
+                  </td>
+                  <td><a href="https://github.com/Mr-Maks-S-A/Learn/tree/v1.13.1"><img src="https://img.shields.io/badge/Ref-0075ca?style=for-the-badge&logo=github" height="20"></a></td>
+                </tr>
+            </tbody>
+           </table>
+        </td>
+      </tr>
+    </table>
+  </details>
 
-<details open>
+  <details>
     <summary><b>📂 1.12.0 Работа с файлами </b></summary>
     <br>
     <table width="100%">

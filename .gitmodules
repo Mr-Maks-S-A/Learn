@@ -1,0 +1,3 @@
+[submodule "External/FTXUI"]
+	path = External/FTXUI
+	url = https://github.com/ArthurSonzogni/FTXUI.git

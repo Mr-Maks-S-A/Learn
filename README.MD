@@ -52,7 +52,7 @@
 #### 🖼️ Preview IMG+VIDEO
 ![](README_IMG/1.13.1_Game_of_Life.png)
 
-![](README_IMG/1_13_1-Game_Life.webm)
+![Demo Game of Life](README_IMG/1_13_1-Game_Life.webm)
 
 
 

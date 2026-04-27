@@ -52,7 +52,7 @@
 #### 🖼️ Preview IMG+VIDEO
 ![](README_IMG/1.13.1_Game_of_Life.png)
 
-![Demo Game of Life](README_IMG/1_13_1-Game_Life.webm)
+<video src="https://github.com/Mr-Maks-S-A/Learn/raw/feature/game-of-life-v1.13/README_IMG/1_13_1-Game_Life.webm" width="100%" controls></video>
 
 
 

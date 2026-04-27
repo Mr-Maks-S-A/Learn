@@ -52,14 +52,11 @@
 #### 🖼️ Preview IMG+VIDEO
 ![](README_IMG/1.13.1_Game_of_Life.png)
 
-https://github.com/Mr-Maks-S-A/Learn/raw/feature/game-of-life-v1.13/README_IMG/1_13_1-Game_Life.mp4
 
 <video width="100%" controls muted>
-  <source src="README_IMG/1_13_1-Game_Life.mp4" type="video/mp4">
+  <source src="https://github.com/Mr-Maks-S-A/Learn/raw/feature/game-of-life-v1.13/README_IMG/1_13_1-Game_Life.mp4" type="video/mp4">
   Ваш браузер не поддерживает встроенные видео.
 </video>
-
-![](README_IMG/1_13_1-Game_Life.mp4)
 
 
 ####  Команды для сборки

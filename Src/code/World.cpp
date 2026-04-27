@@ -57,7 +57,7 @@ void update_world(const World& current, World& next, const Rules& rules) {
             // Поле математически сворачивается в тор: левый край соединен с правым,
             // верхний — с нижним. Это исключает "эффект границы" и позволяет
             // структурам бесконечно циркулировать по полю.
-            int neighbors = 0;
+            int neighbors = 0;///< кол-во соседей
             for (int dy = -1; dy <= 1; ++dy) {
                 for (int dx = -1; dx <= 1; ++dx) {
                     if (dx == 0 && dy == 0) continue;

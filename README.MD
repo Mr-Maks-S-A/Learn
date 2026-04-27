@@ -49,30 +49,16 @@
 
 ### 🚀 Пример работы программы
 
-#### 🖼️ Preview IMG+VIDEO
+#### 🖼️ Demo
 ![](README_IMG/1.13.1_Game_of_Life.png)
 
 
-![](README_IMG/1_13_1-Game_Life_HD.mp4)
+![](README_IMG/1_13_1-preview.gif)
 
-
-
-
-<video width="100%" controls muted>
-  <source src="README_IMG/1_13_1-Game_Life_HD.mp4" type="video/mp4">
-  Ваш браузер не поддерживает встроенные видео.
-</video>
-
-
-
-![](README_IMG/1_13_1-Game_Life_tiny.mp4)
-
-
-<video width="100%" controls muted>
-  <source src="README_IMG/1_13_1-Game_Life_tiny.mp4" type="video/mp4">
-  Ваш браузер не поддерживает встроенные видео.
-</video>
-
+##### 📥 Скачать или посмотреть в высоком качестве
+Если GIF отображается некорректно или вы хотите увидеть детали в HD, вы можете:
+* [**Скачать видео в формате MP4**](README_IMG/1_13_1-Game_Life_HD.mp4?raw=true)
+* [**Посмотреть оригинал (RAW)**](https://github.com/Mr-Maks-S-A/Learn/blob/feature/game-of-life-v1.13/README_IMG/1_13_1-Game_Life_HD.mp4?raw=true)
 
 ####  Команды для сборки
 ```bash

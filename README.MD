@@ -57,8 +57,7 @@
 
 ##### 📥 Скачать или посмотреть в высоком качестве
 Если GIF отображается некорректно или вы хотите увидеть детали в HD, вы можете:
-* [**Скачать видео в формате MP4**](README_IMG/1_13_1-Game_Life_HD.mp4?raw=true)
-* [**Посмотреть оригинал (RAW)**](https://github.com/Mr-Maks-S-A/Learn/blob/feature/game-of-life-v1.13/README_IMG/1_13_1-Game_Life_HD.mp4?raw=true)
+* [**Скачать видео в формате MP4**](README_IMG/1_13_1-Game_Life_HD.mp4)
 
 ####  Команды для сборки
 ```bash

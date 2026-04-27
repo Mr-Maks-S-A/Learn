@@ -44,7 +44,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 # Копирование всей папки Sorce при каждой сборке
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
-    "${CMAKE_CURRENT_SOURCE_DIR}/Sorce"
-    "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Sorce"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source"
+    "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/Source"
     COMMENT "Copying resources to output directory..."
 )

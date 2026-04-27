@@ -9,50 +9,72 @@
  */
 
 #include <iostream>
+#include <filesystem> // Для проверки путей
 #include "World.hpp"
 #include "Loader.hpp"
 #include "ConsoleUI.hpp"
 
 int main(int argc, char* argv[]) {
-    // 1. Настройки мира по умолчанию
-    uint32_t width = 160;
-    uint32_t height = 90;
+    // 1. Настройки по умолчанию
+    uint32_t width = 600;
+    uint32_t height = 600;
     Rules rules;
-
-    // Инициализация правил классической игры "Жизнь" (B3/S23)
     parse_rules("B3/S23", rules);
 
-    // 2. Создание объекта мира
     World world(width, height);
 
-    // 3. Опциональная загрузка из файла, если передан аргумент
+    // Определение пути к файлу
+    std::string target_file;
+    const std::string default_path = "Source/world_save.txt";
+
     if (argc > 1) {
-        std::string filename = argv[1];
-        if (load_world(world, filename)) {
-            // Файл успешно загружен, параметры w/h/gen обновились внутри load_world
+        // Если передан аргумент — используем его
+        target_file = argv[1];
+    } else {
+        // Иначе используем путь по умолчанию
+        target_file = default_path;
+    }
+
+    // 2. Попытка загрузки мира
+    // Если мы используем путь по умолчанию, и файла нет — это не ошибка, просто создаем новый мир
+    if (std::filesystem::exists(target_file)) {
+        if (load_world(world, target_file)) {
+            // Файл успешно загружен
         } else {
-            std::cerr << "Ошибка: Не удалось загрузить файл " << filename << std::endl;
+            std::cerr << "Ошибка: Не удалось прочитать файл " << target_file << std::endl;
             return 1;
         }
     } else {
-        // Если файла нет, можно создать случайное начальное заполнение
-        // (Опционально, для теста)
-        for (uint32_t i = 0; i < (width * height) / 5; ++i) {
-            world.matrix[rand() % (width * height)].is_alive = 1;
+        // Если файла нет (особенно по умолчанию), генерируем случайный мир
+        for (uint32_t i = 0; i < (world.width * world.height) / 5; ++i) {
+            world.matrix[rand() % (world.width * world.height)].is_alive = 1;
         }
     }
 
-    // 4. Запуск UI
+    // 3. Запуск UI
     try {
         ConsoleUI ui(world, rules);
         ui.Run();
+
+        // 4. Сохранение при выходе
+        // Сохраняем в тот же файл, из которого загружались (или в Source/world_save.txt)
+
+        // На всякий случай создаем папку, если её нет
+        std::filesystem::path p(target_file);
+        if (p.has_parent_path()) {
+            std::filesystem::create_directories(p.parent_path());
+        }
+
+        if (save_world(world, target_file)) {
+            std::clog << "Мир успешно сохранён в : " << target_file << std::endl;
+        } else {
+            std::cerr << "Предупреждение: Не удалось сохранить состояние в " << target_file << std::endl;
+        }
+
     } catch (const std::exception& e) {
         std::cerr << "Критическая ошибка UI: " << e.what() << std::endl;
         return 1;
     }
-
-    // 5. Предложение сохранить результат перед выходом (опционально)
-    // save_world(world, "autosave.gol");
 
     return 0;
 }

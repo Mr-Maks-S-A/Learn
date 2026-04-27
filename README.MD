@@ -53,7 +53,7 @@
 ![](README_IMG/1.13.1_Game_of_Life.png)
 
 <video width="100%" controls muted>
-  <source src="https://github.com/user-attachments/assets/efe0635b-4b77-4424-8bc9-f076fa95f283" type="video/webm">
+  <source src="README_IMG/1_13_1-Game_Life_v2.webm" type="video/webm">
   Ваш браузер не поддерживает встроенные видео.
 </video>
 

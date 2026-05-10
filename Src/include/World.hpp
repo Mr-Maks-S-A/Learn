@@ -11,61 +11,50 @@
 #include <string>
 
 
-/**
- * @brief Правила эволюции (B/S).
- * Определяют условия рождения (Birth) и выживания (Survival) клетки
- * в зависимости от количества живых соседей.
- */
-struct Rules {
-    bool birth[9]   = {false}; ///< Индекс N true, если клетка рождается при N соседях.
-    bool survive[9] = {false}; ///< Индекс N true, если клетка выживает при N соседях.
-};
 
-/**
- * @brief Парсит строку правил в формате "Bn/Sn".
- * @param input Строка (например, "B3/S23").
- * @param rules Структура для записи результата.
- * @return true, если удалось распознать формат.
- */
-bool parse_rules(const std::string& input, Rules& rules);
-
-
-#pragma pack(push, 1)
-/**
- * @brief Структура клетки, оптимизированная по памяти , упакованная в 1 байт.
- * Использует битовые поля для эффективного хранения состояния и возраста.
- */
 struct Cell {
     uint8_t is_alive : 1; ///< Статус: 1 - жива, 0 - мертва
     uint8_t age      : 7; ///< Возраст: количество пережитых итераций (0-127)
 };
-#pragma pack(pop)
 
-
-
-/**
- * @brief Контейнер игрового поля и его метаданных.
- */
-struct World {
-    uint32_t width;       ///< Ширина поля
-    uint32_t height;      ///< Высота поля
-    uint32_t generation;  ///< Номер текущего поколения
-    std::vector<Cell> matrix; ///< Плоский массив данных (размер width * height)
-
-    /**
-     * @brief Создает новый мир заданного размера.
-     * @param w Ширина
-     * @param h Высота
-     */
-    World(uint32_t w, uint32_t h);
+enum class WorldState {
+    Active,     // Мир развивается
+    Stagnated,  // Мир зациклился или остановился
+    Empty       // Все клетки погибли
 };
 
-/**
- * @brief Рассчитывает следующее поколение симуляции.
- * Применяет правила "Игры в жизнь" ко всем клеткам поля одновременно.
- * Использует тороидальную топологию (края поля соединены).
- * @param current Состояние мира в текущем кадре.
- * @param next Буфер для записи результатов следующего кадра.
- * @param rules Набор правил для применения.
- */
-void update_world(const World& current, World& next, const Rules& rules);
+
+
+class World {
+public:
+    std::string name;
+    uint32_t width;
+    uint32_t height;
+
+    bool is_alive = true;    // Есть ли живые клетки в текущем Space_0
+    bool is_stagnated = false; // Зациклился ли мир на этом шаге
+    size_t alive_count = 0;    // Количество живых для вывода
+
+    uint32_t generation;
+
+    std::vector<Cell> Space_0;
+    std::vector<Cell> Space_1;
+    std::vector<Cell> Space_2;
+
+
+    World(uint32_t w, uint32_t h);
+    ~World()= default;
+
+
+    // Правило пяти
+    World(const World& other) = default;
+    World(World&& other) noexcept;
+    World& operator=(World&& other) noexcept;
+    World& operator=(const World& other);
+
+
+    bool is_world_identical() const;
+
+    bool has_any_life() const;
+};
+

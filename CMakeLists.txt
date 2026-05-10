@@ -14,11 +14,14 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 
 
-add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/External/FTXUI")
+# add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/External/FTXUI")
 
 
 # Найти все исходные файлы (более явный способ)
-file(GLOB_RECURSE APP_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/Src/code/*.c**" "${CMAKE_CURRENT_SOURCE_DIR}/Src/include/*.h**")
+# Найти все исходные файлы (более явный способ)
+file(GLOB_RECURSE APP_SOURCES  "${CMAKE_CURRENT_SOURCE_DIR}/Src/code/*.c**"
+                               "${CMAKE_CURRENT_SOURCE_DIR}/Src/include/*.inl"
+                               "${CMAKE_CURRENT_SOURCE_DIR}/Src/include/*.h**")
 
 add_executable(${PROJECT_NAME} ${APP_SOURCES})
 
@@ -31,16 +34,16 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 
 # ЛИНКОВКА БИБЛИОТЕК ---
-target_link_libraries(${PROJECT_NAME} PRIVATE
-    ftxui::screen
-    ftxui::dom
-    ftxui::component
-)
+# target_link_libraries(${PROJECT_NAME} PRIVATE
+#     ftxui::screen
+#     ftxui::dom
+#     ftxui::component
+# )
 
 
 
 
-# Копирование файла при каждой сборке (на случай изменений в исходнике)
+
 # Копирование всей папки Sorce при каждой сборке
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory

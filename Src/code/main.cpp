@@ -1,80 +1,106 @@
-/**
- * @file main.cpp
- * @brief Точка входа в программу.
- * * @details Данный файл выполняет следующие задачи:
- * 1. Установка начальных параметров симуляции (размер поля, правила).
- * 2. Инициализация объекта игрового мира @ref World.
- * 3. Обработка аргументов командной строки для загрузки файлов через @ref Loader.
- * 4. Создание и запуск графического интерфейса пользователя @ref ConsoleUI.
- */
-
 #include <iostream>
-#include <filesystem> // Для проверки путей
+#include <thread>
+#include <clocale>
+#include <memory>
+#include <iomanip> // Для красивого вывода конфига
+#include "ConfigParser.hpp"
 #include "World.hpp"
+#include "EvolutionEng.hpp"
+#include "UIEng.hpp"
 #include "Loader.hpp"
-#include "ConsoleUI.hpp"
+
+/**
+ * @brief Вспомогательная функция для вывода текущей конфигурации
+ */
+void print_session_info(const std::string& path, const Config& cfg) {
+    std::cout << "=== Запуск симуляции ===" << std::endl;
+    std::cout << "Файл мира: " << path << std::endl;
+    std::cout << "Правила:    " << cfg.rulesStr << std::endl;
+    std::cout << "Геометрия:  " << (cfg.topology == Topology::Toroidal ? "Toroidal" : "Bounded") << std::endl;
+    std::cout << "Макс. шагов:" << (cfg.maxSteps == -1 ? "Бесконечно" : std::to_string(cfg.maxSteps)) << std::endl;
+    std::cout << "------------------------" << std::endl;
+}
 
 int main(int argc, char* argv[]) {
-    // 1. Настройки по умолчанию
-    uint32_t width = 600;
-    uint32_t height = 600;
-    Rules rules;
-    parse_rules("B3/S23", rules);
+    std::setlocale(LC_ALL, "");
 
-    World world(width, height);
-
-    // Определение пути к файлу
-    std::string target_file;
-    const std::string default_path = "Source/world_save.txt";
-
-    if (argc > 1) {
-        // Если передан аргумент — используем его
-        target_file = argv[1];
-    } else {
-        // Иначе используем путь по умолчанию
-        target_file = default_path;
+    Config cfg = ConfigParser::parse(argc, argv);
+    if (cfg.helpRequested) {
+        ConfigParser::printHelp(argv[0]);
+        return EXIT_SUCCESS;
     }
 
-    // 2. Попытка загрузки мира
-    // Если мы используем путь по умолчанию, и файла нет — это не ошибка, просто создаем новый мир
-    if (std::filesystem::exists(target_file)) {
-        if (load_world(world, target_file)) {
-            // Файл успешно загружен
-        } else {
-            std::cerr << "Ошибка: Не удалось прочитать файл " << target_file << std::endl;
-            return 1;
+    EvolutionEng engine;
+    engine.topology = cfg.topology;
+    if (!engine.rules.parse_rules(cfg.rulesStr)) {
+        engine.rules.parse_rules("B3S23");
+    }
+
+    std::unique_ptr<Renderer> renderer = std::make_unique<PrimitiveRenderer>();
+    renderer->useClear = (cfg.printMode != "last" && !cfg.noClear);
+
+    for (size_t i = 0; i < cfg.filePaths.size(); ++i) {
+        const auto& path = cfg.filePaths[i];
+
+        // Разделение между файлами пробелом (пустой строкой)
+        if (i > 0) std::cout << "\n\n";
+
+        World world(1, 1);
+        if (!load_world(world, path)) {
+            std::cerr << "Ошибка загрузки: " << path << std::endl;
+            continue;
         }
-    } else {
-        // Если файла нет (особенно по умолчанию), генерируем случайный мир
-        for (uint32_t i = 0; i < (world.width * world.height) / 5; ++i) {
-            world.matrix[rand() % (world.width * world.height)].is_alive = 1;
+
+        // Вывод инфо на первой итерации загрузки файла
+        print_session_info(path, cfg);
+
+        bool wasPrinted = false;
+        bool canContinue = true;
+
+        // Внутри цикла по файлам (main.cpp)
+        while (true) {
+            // 1. Определяем, нужно ли печатать ТЕКУЩЕЕ состояние
+            bool isLastStep = (cfg.maxSteps != -1 && world.generation >= (uint32_t)cfg.maxSteps);
+            bool shouldPrint = (cfg.printMode == "all") ||
+            (cfg.printMode == "interval" && world.generation % cfg.printInterval == 0);
+
+            if (shouldPrint) {
+                renderer->clear();
+                renderer->render(world);
+                wasPrinted = true;
+            }
+
+            // 2. Если достигли лимита шагов — СТОП (до вычисления нового шага)
+            if (isLastStep) {
+                if (cfg.printMode == "last") { // Для режима last печатаем только в самом конце
+                    renderer->clear();
+                    renderer->render(world);
+                }
+                std::cout << "\n[Результат]: Остановка по лимиту шагов.\n";
+                break;
+            }
+
+            // 3. Делаем шаг
+            canContinue = engine.step(world);
+
+            // 4. Если мир стабилизировался (стагнация или смерть) — СТОП
+            if (!canContinue) {
+                // Отрисовываем финальный результат, если он еще не был отрисован
+                renderer->clear();
+                renderer->render(world);
+
+                size_t finalAlive = 0;
+                for(const auto& cell : world.Space_0) if(cell.is_alive) finalAlive++;
+
+                std::cout << "\n[Результат]: " << (finalAlive == 0 ? "Мир мёртв." : "Стагнация.") << std::endl;
+                break;
+            }
+
+            if (cfg.printMode != "last") {
+                std::this_thread::sleep_for(std::chrono::milliseconds(cfg.speedMs));
+            }
         }
     }
 
-    // 3. Запуск UI
-    try {
-        ConsoleUI ui(world, rules);
-        ui.Run();
-
-        // 4. Сохранение при выходе
-        // Сохраняем в тот же файл, из которого загружались (или в Source/world_save.txt)
-
-        // На всякий случай создаем папку, если её нет
-        std::filesystem::path p(target_file);
-        if (p.has_parent_path()) {
-            std::filesystem::create_directories(p.parent_path());
-        }
-
-        if (save_world(world, target_file)) {
-            std::clog << "Мир успешно сохранён в : " << target_file << std::endl;
-        } else {
-            std::cerr << "Предупреждение: Не удалось сохранить состояние в " << target_file << std::endl;
-        }
-
-    } catch (const std::exception& e) {
-        std::cerr << "Критическая ошибка UI: " << e.what() << std::endl;
-        return 1;
-    }
-
-    return 0;
+    return EXIT_SUCCESS;
 }

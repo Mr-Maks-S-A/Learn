@@ -1,105 +1,90 @@
 /**
- * @file World.cpp
- * @brief Реализация логики симуляции и работы с миром.
+ * @file World.сpp
  */
 
 #include "World.hpp"
 #include <cctype>
 #include <string>
-
-
-
-
-bool parse_rules(const std::string& input, Rules& rules) {
-    // Сброс данных перед заполнением
-    for (int i = 0; i < 9; ++i) {
-        rules.birth[i] = rules.survive[i] = false;
-    }
-
-    char mode = 0; // 'B' или 'S'
-    bool found = false;
-
-    for (char c : input) {
-        char upper = std::toupper(c);
-        if (upper == 'B' || upper == 'S') {
-            mode = upper;
-            found = true;
-        } else if (std::isdigit(c) && mode != 0) {
-            int n = c - '0';
-            if (n >= 0 && n <= 8) {
-                if (mode == 'B') rules.birth[n] = true;
-                else rules.survive[n] = true;
-            }
-        }
-    }
-    return found;
-}
-
-
+#include <cassert>
 
 
 World::World(uint32_t w, uint32_t h)
-: width(w), height(h), generation(0), matrix(w * h, {0, 0}) {}
-
-
-
-void update_world(const World& current, World& next, const Rules& rules) {
-    // Увеличиваем счетчик поколений
-    next.generation = current.generation + 1;
-
-    const uint32_t w = current.width;
-    const uint32_t h = current.height;
-
-    for (uint32_t y = 0; y < h; ++y) {
-        for (uint32_t x = 0; x < w; ++x) {
-
-            /// 1. Сбор соседей с использованием тороидальной топологии (Wrap-around).
-            // Поле математически сворачивается в тор: левый край соединен с правым,
-            // верхний — с нижним. Это исключает "эффект границы" и позволяет
-            // структурам бесконечно циркулировать по полю.
-            int neighbors = 0;///< кол-во соседей
-            for (int dy = -1; dy <= 1; ++dy) {
-                for (int dx = -1; dx <= 1; ++dx) {
-                    if (dx == 0 && dy == 0) continue;
-
-                    // Формула (current + delta + size) % size гарантирует, что:
-                    // -1 превращается в (size - 1) (переход влево/вверх на ту сторону)
-                    // size превращается в 0 (переход вправо/вниз на начало)
-                    uint32_t nx = (x + dx + w) % w;
-                    uint32_t ny = (y + dy + h) % h;
-
-                    if (current.matrix[ny * w + nx].is_alive) {
-                        neighbors++;
-                    }
-                }
-            }
-
-            // 2. Обработка логики на основе текущего состояния
-            const Cell& old_cell = current.matrix[y * w + x];
-            Cell& new_cell = next.matrix[y * w + x];
-
-            if (old_cell.is_alive) {
-                // Если клетка жива, проверяем, выживет ли она
-                if (rules.survive[neighbors]) {
-                    new_cell.is_alive = 1;
-                    // Увеличиваем возраст, не выходя за предел 7 бит (127)
-                    new_cell.age = (old_cell.age < 127) ? (old_cell.age + 1) : 127;
-                } else {
-                    // Клетка умирает от одиночества или перенаселения
-                    new_cell.is_alive = 0;
-                    new_cell.age = 0;
-                }
-            } else {
-                // Если клетка мертва, проверяем, не родится ли она
-                if (rules.birth[neighbors]) {
-                    new_cell.is_alive = 1;
-                    new_cell.age = 0; // Новая жизнь всегда начинается с возраста 0
-                } else {
-                    // Остается мертвой
-                    new_cell.is_alive = 0;
-                    new_cell.age = 0;
-                }
-            }
-        }
-    }
+: width(w), height(h), generation(0) {
+    assert(w > 0 && h > 0);
+    size_t sz = static_cast<size_t>(w) * h;
+    Space_0.assign(sz, {0, 0});
+    Space_1.assign(sz, {0, 0});
+    Space_2.assign(sz, {0, 0});
 }
+
+// Конструктор перемещения
+World::World(World&& other) noexcept
+: name(std::move(other.name)),
+width(other.width),
+height(other.height),
+generation(other.generation),
+Space_0(std::move(other.Space_0)),
+Space_1(std::move(other.Space_1)),
+Space_2(std::move(other.Space_2)) {}
+
+World& World::operator=(World&& other) noexcept {
+    if (this != &other) {
+        name = std::move(other.name);
+        width = other.width;
+        height = other.height;
+        generation = other.generation;
+        Space_0 = std::move(other.Space_0);
+        Space_1 = std::move(other.Space_1);
+        Space_2 = std::move(other.Space_2);
+    }
+    return *this;
+}
+
+World& World::operator=(const World& other) {
+    if (this != &other) {
+        name = other.name;
+        width = other.width;
+        height = other.height;
+        generation = other.generation;
+        Space_0 = other.Space_0;
+        Space_1 = other.Space_1;
+        Space_2 = other.Space_2;
+    }
+    return *this;
+}
+
+
+
+bool World::is_world_identical() const{
+    // Проверяем текущее состояние (0) против предыдущего (1)
+    // и против позапрошлого (2) для поиска осцилляторов
+
+    auto check = [&](const std::vector<Cell>& other) {
+        for (size_t i = 0; i < Space_0.size(); ++i) {
+            if (Space_0[i].is_alive != other[i].is_alive) return false;
+        }
+        return true;
+    };
+
+    return check(Space_1) || check(Space_2);
+}
+
+
+
+
+bool World::has_any_life() const{
+    for (const auto& cell : Space_0) {
+        if (cell.is_alive) return true;
+    }
+    return false;
+}
+
+
+
+
+
+
+
+
+
+
